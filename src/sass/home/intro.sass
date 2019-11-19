@@ -1,0 +1,66 @@
+.home-intro
+  background: radial-gradient(81.46% 682.66% at 81.46% 53.93%, #6D6D6D 0%, #343434 46.43%)
+  min-height: 700px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    top: 0
+    right: 130px
+    min-height: 700px
+    width: 300px
+    background-color: #141417
+    z-index: 0
+  &:before
+    content: ""
+    display: block
+    position: absolute
+    right: 190px
+    top: 188px
+    border-radius: 50%
+    width: 447px
+    height: 447px
+    background: #CBA550
+    z-index: 1
+  & img
+    position: absolute
+    top: 90px
+    right: 200px
+    z-index: 2
+  h1
+    color: $white
+    font-size: 60px
+    line-height: 69px
+    padding-top: 170px
+    margin: 20px 0
+  h2
+    color: $white
+    max-width: 373px
+    font-size: 40px
+    line-height: 35px
+    margin: 20px 0 79px
+a.btn-primary
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 279px
+  height: 79px
+  color: $white
+  font-size: 25px
+  line-height: 29px
+  text-align: center
+  background: #CBA550
+  &:hover
+    background: #967740
+.btn-next p
+  font-size: 12px
+  line-height: 14px
+  text-align: center
+  letter-spacing: 0.35em
+  text-transform: uppercase
+  color: $white
+  margin-top: 50px

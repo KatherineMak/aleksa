@@ -56,11 +56,18 @@ a.btn-primary
   background: #CBA550
   &:hover
     background: #967740
-.btn-next p
-  font-size: 12px
-  line-height: 14px
+.btn-next 
   text-align: center
-  letter-spacing: 0.35em
-  text-transform: uppercase
-  color: $white
-  margin-top: 50px
+  & a
+    cursor: pointer
+    &:hover
+      color: #CBA550
+  & p
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.35em
+    text-transform: uppercase
+    color: $white
+    margin-top: 50px
+  & .icon-arrow
+    fill: $white

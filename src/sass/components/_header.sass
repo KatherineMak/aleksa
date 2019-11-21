@@ -8,12 +8,15 @@
   z-index: 4
   +tr
   nav
-    & a
+    display: flex
+    justify-content: space-between
+    a
       font-size: 16px
       line-height: 19px
       text-align: right
       color: #FFFFFF
-      margin-right: 90px
+      +r(767)
+        display: none
       & .icon-basket
         fill: $white
       &:hover
@@ -22,13 +25,10 @@
         color: #CBA550
         &:hover
           color: $white
-      &.nav-link
-        +r(1199)
-          display: none
     & .menu-toggle
-      opacity: 0
-      +r(1199)
-        opacity: 1
+      display: none
+      +r(767)
+        display: block
         position: absolute
         right: 5%
         border: none
@@ -53,13 +53,15 @@
 .menu
   position: fixed
   right: -256px
-  height: 100vh
+  height: 100%
   width: 256px
   background-color: #232323
   padding: 15px
   transition: 0.6s
   z-index: 99
-  & a
+  &.is-active
+    right: 0
+  a
     display: block
     font-weight: 700
     font-size: 20px
@@ -82,14 +84,6 @@
   left: 0
   z-index: 99
   display: none
-.menu.is-active
-  position: fixed
-  right: 0
-  height: 100vh
-  width: 256px
-  background-color: #232323
-  padding: 20px
-  z-index: 99
 
 .header-fixed
   position: fixed

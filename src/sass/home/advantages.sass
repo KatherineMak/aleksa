@@ -1,8 +1,9 @@
 .home-advantages
-  min-height: 650px
+  // min-height: 650px
   padding: 40px 0
   position: relative
-  .text-container 
+  overflow: hidden
+  &__text
     max-width: 280px
     padding-top: 230px
   .btn-next__container
@@ -10,56 +11,74 @@
     bottom: 20px
     right: 200px
     text-align: center
-    & p
+    p
       font-size: 12px
       line-height: 14px
       letter-spacing: 0.35em
       text-transform: uppercase
       color: #73581B
-    & .icon-arrow
+    .icon-arrow
       fill: #73581B
-  & .swiper-container-1
-    height: 420px
-    width: 70%
+  .swiper-container-advantages
     position: absolute
-    top: 115px
-    right: 10%
-  & .swiper-slide
-    width: 283px
-  & .swiper-slide.swiper-slide-active
-    width: 283px
-  & .advantage-slide
-    //+center
+    right: -50px
+    top: 100px
+    width: 860px
+    +r(1200)
+      width: 600px
+    +r(991)
+      width: 450px
+    +r(767)
+      width: 100%
+      position: static
+  .swiper-slide
+    .home-advantages__slide
+      width: 283px
+      transform: scale(0.68)
+      transition: all 0.8s
+      +r(767)
+        transform: scale(1)
+        width: 100%
+  .swiper-slide-active
+    z-index: 3 !important
+    .home-advantages__slide
+      transform: scale(1)
+      position: relative
+      left: -23px
+      +r(1200)
+        left: -15px
+      h3, p
+        opacity: 1
+      svg
+        top: 0
+  &__slide
     position: relative
     text-align: center
-    height: 374px
-    width: 283px
     background: #2C2C2C
     box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.38)
     border-radius: 10px
-    &.no-active .icon
-      position: absolute
-      top: 50%
-      left: 50%
-      margin-right: -50%
-      transform: translate(-50%, -50%)
-      fill: #73581B
-      width: 40px
-      height: 40px
-    & .icon-feather
-      margin-top: 55px
+    padding-bottom: 40px
+    padding-top: 55px
+    svg
       width: 73px
       height: 67px
       fill: #CBA550
-    & h3
+      position: relative
+      top: 80px
+      transition: all 0.8s
+    h3
       font-weight: bold
       font-size: 18px
       line-height: 21px
       color: #FFFFFF
       margin: 76px auto 10px
       padding: 0 25px
-    & p
+      transition: all 0.6s
+      opacity: 0
+    p
       font-size: 18px
       line-height: 87.27%
       color: #9F9F9F
       padding: 0 25px
+      transition: all 0.6s
+      opacity: 0

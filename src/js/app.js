@@ -1,5 +1,5 @@
 import './import/swiper';
 import './import/ui';
-// import objectFitImages from 'object-fit-images';
+import objectFitImages from 'object-fit-images';
 
-// objectFitImages();
+objectFitImages();

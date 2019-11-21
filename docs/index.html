@@ -35,11 +35,10 @@
             </a></div><img src="img/intro.png" alt="intro">
         </div>
       </section>
-      <!--include ./home/advantages-->
       <section class="home-advantages" id="advantages">
         <div class="container">
           <h2>Почему Aleksa Gold</h2>
-          <div class="text-container">
+          <div class="home-advantages__text">
             <p>Сделай подарок своим волосам</p>
             <p>Сделай заказ сейчас же и получи порцию витаминов для волос уже завтра!</p>
           </div><a class="btn-secondary" href="#">Заказать</a>
@@ -48,10 +47,10 @@
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
             </a></div>
-          <div class="swiper-container-1">
+          <div class="swiper-container swiper-container-advantages">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="advantage-slide"><svg class="icon icon-feather ">
+                <div class="home-advantages__slide"><svg class="icon icon-feather ">
                     <use xlink:href="img/sprite.svg#icon-feather"></use>
                   </svg>
                   <h3>Легкая текстура для всех типов волос</h3>
@@ -59,19 +58,28 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="advantage-slide no-active"><svg class="icon icon-number ">
+                <div class="home-advantages__slide"><svg class="icon icon-number ">
                     <use xlink:href="img/sprite.svg#icon-number"></use>
-                  </svg></div>
+                  </svg>
+                  <h3>Легкая текстура для всех типов волос</h3>
+                  <p>Сюда можно будет вставить какой-то дополнительный текст с описанием</p>
+                </div>
               </div>
               <div class="swiper-slide">
-                <div class="advantage-slide no-active"><svg class="icon icon-rabbit ">
-                    <use xlink:href="img/sprite.svg#icon-rabbit"></use>
-                  </svg></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="advantage-slide no-active"><svg class="icon icon-star ">
+                <div class="home-advantages__slide"><svg class="icon icon-star ">
                     <use xlink:href="img/sprite.svg#icon-star"></use>
-                  </svg></div>
+                  </svg>
+                  <h3>Легкая текстура для всех типов волос</h3>
+                  <p>Сюда можно будет вставить какой-то дополнительный текст с описанием</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-advantages__slide"><svg class="icon icon-rabbit ">
+                    <use xlink:href="img/sprite.svg#icon-rabbit"></use>
+                  </svg>
+                  <h3>Легкая текстура для всех типов волос</h3>
+                  <p>Сюда можно будет вставить какой-то дополнительный текст с описанием</p>
+                </div>
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -80,25 +88,74 @@
       </section>
       <section class="home-gallery" id="gallery">
         <div class="container">
-          <h2>Галерея</h2>
-          <div class="text-container">
-            <p>Окунись в мир красоты и будь частью AleksaGold - фото продукции, производство и вся жизнь бренда в одном месте.</p><a class="social" href="#"><svg class="icon icon-instagram ">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
-              </svg><span>Instagram</span></a><a class="social" href="#"><svg class="icon icon-facebook ">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
-              </svg><span>Facebook</span></a>
-          </div>
-          <div class="gallery-container">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="slide-area"><img src="img/slider-img-1.png" alt="Slider image 1."><img src="img/slider-img-2.png" alt="Slider image 2."><img src="img/slider-img-3.png" alt="Slider image 3."><img src="img/slider-img-4.png" alt="Slider image 4."></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="slide-area"><img src="img/slider-img-1.png" alt="Slider image 1."><img src="img/slider-img-2.png" alt="Slider image 2."><img src="img/slider-img-3.png" alt="Slider image 3."><img src="img/slider-img-4.png" alt="Slider image 4."></div>
+          <div class="row">
+            <div class="col-md-3">
+              <h2>Галерея</h2>
+              <div class="home-gallery__text">
+                <p>Окунись в мир красоты и будь частью AleksaGold - фото продукции, производство и вся жизнь бренда в одном месте.</p><a class="social" href="#"><svg class="icon icon-instagram ">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg><span>Instagram</span></a><a class="social" href="#"><svg class="icon icon-facebook ">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg><span>Facebook</span></a>
+              </div>
+            </div>
+            <div class="col-md-8 offset-md-1">
+              <div class="home-gallery__container">
+                <div class="swiper-container swiper-container-gallery">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="home-gallery__row">
+                        <div class="home-gallery__column">
+                          <div class="home-gallery__img"><img src="img/slider-img-1.png" alt="Slider image 1."></div>
+                          <div class="home-gallery__img"><img src="img/slider-img-3.png" alt="Slider image 3."></div>
+                        </div>
+                        <div class="home-gallery__column">
+                          <div class="home-gallery__img"><img src="img/slider-img-2.png" alt="Slider image 2."></div>
+                          <div class="home-gallery__img"><img src="img/slider-img-4.png" alt="Slider image 4."></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="home-gallery__row">
+                        <div class="home-gallery__column">
+                          <div class="home-gallery__img"><img src="img/slider-img-1.png" alt="Slider image 1."></div>
+                          <div class="home-gallery__img"><img src="img/slider-img-3.png" alt="Slider image 3."></div>
+                        </div>
+                        <div class="home-gallery__column">
+                          <div class="home-gallery__img"><img src="img/slider-img-2.png" alt="Slider image 2."></div>
+                          <div class="home-gallery__img"><img src="img/slider-img-4.png" alt="Slider image 4."></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="home-gallery__row">
+                        <div class="home-gallery__column">
+                          <div class="home-gallery__img"><img src="img/slider-img-1.png" alt="Slider image 1."></div>
+                          <div class="home-gallery__img"><img src="img/slider-img-3.png" alt="Slider image 3."></div>
+                        </div>
+                        <div class="home-gallery__column">
+                          <div class="home-gallery__img"><img src="img/slider-img-2.png" alt="Slider image 2."></div>
+                          <div class="home-gallery__img"><img src="img/slider-img-4.png" alt="Slider image 4."></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="home-gallery__row">
+                        <div class="home-gallery__column">
+                          <div class="home-gallery__img"><img src="img/slider-img-1.png" alt="Slider image 1."></div>
+                          <div class="home-gallery__img"><img src="img/slider-img-3.png" alt="Slider image 3."></div>
+                        </div>
+                        <div class="home-gallery__column">
+                          <div class="home-gallery__img"><img src="img/slider-img-2.png" alt="Slider image 2."></div>
+                          <div class="home-gallery__img"><img src="img/slider-img-4.png" alt="Slider image 4."></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next swiper-shares-gallery"></div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>

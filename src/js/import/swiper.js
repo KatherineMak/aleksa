@@ -1,29 +1,56 @@
 import Swiper from 'swiper';
 
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 2,
-    spaceBetween: 10,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+
+//advantages
+const swiper1 = new Swiper('.swiper-container-advantages', {
+  effect: 'coverflow',
+  grabCursor: true,
+  loop: true,
+  speed: 800,
+  slidesPerView: 4,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 15,
+    depth: 0,
+    modifier: 1,
+    slideShadows : false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
     },
+    991: {
+      slidesPerView: 3,
+    },
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    }
+  }
 });
 
-const swiper1 = new Swiper('.swiper-container-1', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 4,
-    coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-    }
+
+//gallery
+const swiper = new Swiper('.swiper-container-gallery', {
+  slidesPerView: 2,
+  spaceBetween: 0,
+  speed: 600,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-shares-gallery',
+  },
 });
 
 

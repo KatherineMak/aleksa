@@ -2,10 +2,11 @@
   position: absolute
   top: 0
   left: 0
-  right: 0
   align-items: center
   padding: 10px
+  width: 100%
   z-index: 4
+  +tr
   nav
     & a
       font-size: 16px
@@ -96,17 +97,8 @@
   left: 0
   align-items: center
   background-color: $black
-  animation-name: show_header
-  animation-duration: 1s
   z-index: 6
   width: 100%
-  padding: 20px 0
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7)
 .header-fixed .logo
   display: none
-@keyframes show_header
-  0%
-    opacity: 0
-    top: -70px
-  100%
-    opacity: 1
-    top: 0

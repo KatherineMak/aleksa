@@ -15,35 +15,7 @@ block content
   //-     li= item
   // partial example
   include ./home/intro
-  //include ./home/advantages
-  section.home-advantages#advantages
-      .container
-          h2 Почему Aleksa Gold
-          .text-container
-              p Сделай подарок своим волосам
-              p Сделай заказ сейчас же и получи порцию витаминов для волос уже завтра!
-          a.btn-secondary(href="#") Заказать
-          .btn-next__container
-              a(href="#gallery")
-                  p Смотри больше
-                  +icon("arrow")
-          .swiper-container-1
-              .swiper-wrapper
-                  .swiper-slide
-                    .advantage-slide
-                      +icon("feather")
-                      h3 Легкая текстура для всех типов волос
-                      p Сюда можно будет вставить какой-то дополнительный текст с описанием
-                  .swiper-slide
-                    .advantage-slide.no-active
-                      +icon("number")
-                  .swiper-slide
-                    .advantage-slide.no-active
-                      +icon("rabbit")
-                  .swiper-slide
-                    .advantage-slide.no-active
-                      +icon("star")
-              .swiper-pagination
+  include ./home/advantages
   include ./home/gallery
   include ./home/shop
   include ./home/partners

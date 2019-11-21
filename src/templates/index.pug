@@ -16,7 +16,7 @@ block content
   // partial example
   include ./home/intro
   //include ./home/advantages
-  section.home-advantages
+  section.home-advantages#advantages
       .container
           h2 Почему Aleksa Gold
           .text-container
@@ -24,10 +24,9 @@ block content
               p Сделай заказ сейчас же и получи порцию витаминов для волос уже завтра!
           a.btn-secondary(href="#") Заказать
           .btn-next__container
-              a(href="#")
+              a(href="#gallery")
                   p Смотри больше
                   +icon("arrow")
-
           .swiper-container-1
               .swiper-wrapper
                   .swiper-slide

@@ -2,11 +2,23 @@ header.header
     .container
         .logo
             img(src="img/logo.png", alt="logo")
-        nav
-            a(href="#") Aleksa Gold
-            a(href="#") Продукция
-            a(href="#") Партнерская программа
-            a(href="#") Философия бренда
-            a(href="#") Контакты
+        nav(class="nav-links")
+            a(href="#intro") Aleksa Gold
+            a(href="#shop" class="nav-link") Продукция
+            a(href="#partners" class="nav-link") Партнерская программа
+            a(href="#about" class="nav-link") Философия бренда
+            a(href="#footer" class="nav-link") Контакты
             a(href="#pop-up" rel="modal:open")
                 +icon("basket")
+            button(class="menu-toggle")
+                span
+                span
+                span
+.menu-bg
+.menu
+    a(href="#" class="btn-close")
+        +icon("close")
+    a(href="#") Продукция
+    a(href="#") Партнерская программа
+    a(href="#") Философия бренда
+    a(href="#") Контакты

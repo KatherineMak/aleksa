@@ -6,53 +6,107 @@
   align-items: center
   padding: 10px
   z-index: 4
-.logo
-  display: block
-  text-align: center
-  margin-bottom: 25px
-nav a
-  font-size: 16px
-  line-height: 19px
-  text-align: right
-  color: #FFFFFF
-  margin-right: 90px
-  & .icon-basket
-    fill: $white
-  &:hover
-    color: #CBA550
-  &:first-child
-    color: #CBA550
+  nav
+    & a
+      font-size: 16px
+      line-height: 19px
+      text-align: right
+      color: #FFFFFF
+      margin-right: 90px
+      & .icon-basket
+        fill: $white
+      &:hover
+        color: #CBA550
+      &:first-child
+        color: #CBA550
+        &:hover
+          color: $white
+      &.nav-link
+        +r(1199)
+          display: none
+    & .menu-toggle
+      opacity: 0
+      +r(1199)
+        opacity: 1
+        position: absolute
+        right: 5%
+        border: none
+        background-color: transparent
+        padding: 0
+      & span
+        height: 3px
+        display: block
+        background-color: #ffffff
+        width: 30px
+      & span + span
+        margin-top: 4px
+      & .menu-toggle:focus
+        outline: none
+      & .menu-toggle:hover span
+        background-color: #232323
+  & .logo
+    display: block
+    text-align: center
+    margin-bottom: 25px
+
+.menu
+  position: fixed
+  right: -256px
+  height: 100vh
+  width: 256px
+  background-color: #232323
+  padding: 15px
+  transition: 0.6s
+  z-index: 99
+  & a
+    display: block
+    font-weight: 700
+    font-size: 20px
+    margin: 15px 0
+    line-height: 87.27%
+    color: #5a5a5a
     &:hover
-      color: $white
-  //height: 100px
-  //background: #a7a7a7
-  // .menu-open
-  //   position: absolute
-  //   left: 20px
-  //   top: 65px
-  //   width: 30px
-  //   height: 30px
-  //   display: none
-  //   z-index: 99
-  //   +r(1100)
-  //     display: block
-  //   +r(767)
-  //     top: 55%
-  //     transform: translate(0, -50%)
-  //   span
-  //     width: 30px
-  //     height: 2px
-  //     margin-top: 10px
-  //     background: $white
-  //     display: block
-  //     &:before, &:after
-  //       content: ''
-  //       width: 30px
-  //       height: 2px
-  //       background: $white
-  //       position: absolute
-  //       left: 0
-  //     &:before
-  //       top: 0
-  //     &:after
-  //       bottom: 8px
+      color: #a1a1a1
+    & .icon-close
+      margin: 0
+      fill: #5a5a5a
+      &:hover
+        fill: #a1a1a1
+.menu-bg
+  background-color: rgba(0, 0, 0, 0.43)
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99
+  display: none
+.menu.is-active
+  position: fixed
+  right: 0
+  height: 100vh
+  width: 256px
+  background-color: #232323
+  padding: 20px
+  z-index: 99
+
+.header-fixed
+  position: fixed
+  top: 0
+  left: 0
+  align-items: center
+  background-color: $black
+  animation-name: show_header
+  animation-duration: 1s
+  z-index: 6
+  width: 100%
+  padding: 20px 0
+.header-fixed .logo
+  display: none
+@keyframes show_header
+  0%
+    opacity: 0
+    top: -70px
+  100%
+    opacity: 1
+    top: 0

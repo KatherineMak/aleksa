@@ -15,16 +15,20 @@
       <header class="header">
         <div class="container">
           <div class="logo"><img src="img/logo.png" alt="logo"></div>
-          <nav><a href="#">Aleksa Gold</a><a href="#">Продукция</a><a href="#">Партнерская программа</a><a href="#">Философия бренда</a><a href="#">Контакты</a><a href="#pop-up" rel="modal:open"><svg class="icon icon-basket ">
+          <nav class="nav-links"><a href="#intro">Aleksa Gold</a><a class="nav-link" href="#shop">Продукция</a><a class="nav-link" href="#partners">Партнерская программа</a><a class="nav-link" href="#about">Философия бренда</a><a class="nav-link" href="#footer">Контакты</a><a href="#pop-up" rel="modal:open"><svg class="icon icon-basket ">
                 <use xlink:href="img/sprite.svg#icon-basket"></use>
-              </svg></a></nav>
+              </svg></a><button class="menu-toggle"><span></span><span></span><span></span></button></nav>
         </div>
-      </header><!-- partial example-->
-      <section class="home-intro">
+      </header>
+      <div class="menu-bg"></div>
+      <div class="menu"><a class="btn-close" href="#"><svg class="icon icon-close ">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg></a><a href="#">Продукция</a><a href="#">Партнерская программа</a><a href="#">Философия бренда</a><a href="#">Контакты</a></div><!-- partial example-->
+      <section class="home-intro" id="intro">
         <div class="container">
           <h1>Заголовок</h1>
           <h2>Здесь какой-то подзаголовок</h2><a class="btn-primary" href="#">Кнопка</a>
-          <div class="btn-next"><a href="#">
+          <div class="btn-next"><a href="#advantages">
               <p>Листай дальше</p><svg class="icon icon-arrow ">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
@@ -32,14 +36,14 @@
         </div>
       </section>
       <!--include ./home/advantages-->
-      <section class="home-advantages">
+      <section class="home-advantages" id="advantages">
         <div class="container">
           <h2>Почему Aleksa Gold</h2>
           <div class="text-container">
             <p>Сделай подарок своим волосам</p>
             <p>Сделай заказ сейчас же и получи порцию витаминов для волос уже завтра!</p>
           </div><a class="btn-secondary" href="#">Заказать</a>
-          <div class="btn-next__container"><a href="#">
+          <div class="btn-next__container"><a href="#gallery">
               <p>Смотри больше</p><svg class="icon icon-arrow ">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
@@ -74,7 +78,7 @@
           </div>
         </div>
       </section>
-      <section class="home-gallery">
+      <section class="home-gallery" id="gallery">
         <div class="container">
           <h2>Галерея</h2>
           <div class="text-container">
@@ -99,7 +103,7 @@
           </div>
         </div>
       </section>
-      <section class="home-shop">
+      <section class="home-shop" id="shop">
         <div class="container">
           <h2>Магазин</h2>
           <div class="text-container">
@@ -250,7 +254,7 @@
           </div>
         </div>
       </section>
-      <section class="home-partners">
+      <section class="home-partners" id="partners">
         <div class="container">
           <div class="heading-container">
             <h2>Партнерская программа</h2>
@@ -267,7 +271,7 @@
           </div>
         </div>
       </section>
-      <section class="home-about">
+      <section class="home-about" id="about">
         <div class="container">
           <div class="row">
             <div class="col-md-5"><img src="img/aleksa-ph.png" alt="aleksa-photo"></div>
@@ -279,7 +283,7 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="container">
           <div class="row">
             <div class="col-md-3"><a class="footer-logo" href="#">Aleksa Gold</a></div>

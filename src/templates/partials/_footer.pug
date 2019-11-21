@@ -2,15 +2,17 @@ footer.footer#footer
     .container
         .row
             .col-md-3
-                a.footer-logo(href="#") Aleksa Gold
+                .container-logo
+                    a.footer-logo(href="#") Aleksa Gold
             .col-md-3
-                h3 Мы в соц. сетях
-                a.social(href="#")
-                    +icon("instagram")
-                    span Instagram
-                a.social(href="#")
-                    +icon("facebook")
-                    span Facebook
+                .social-box
+                    h3 Мы в соц. сетях
+                    a.social(href="#")
+                        +icon("instagram")
+                        span Instagram
+                    a.social(href="#")
+                        +icon("facebook")
+                        span Facebook
             .col-md-3
                 h3 Мы на связи
                 a.phone(href="tel:+38 (050) 909 56 86") +38 (050) 909 56 86

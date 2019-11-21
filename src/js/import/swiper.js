@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 
 const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 10,
     pagination: {
         el: '.swiper-pagination',

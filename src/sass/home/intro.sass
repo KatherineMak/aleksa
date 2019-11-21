@@ -11,6 +11,8 @@
     position: absolute
     top: 0
     right: 130px
+    +r(1199)
+      right: 30px
     min-height: 700px
     width: 300px
     background-color: #141417
@@ -20,6 +22,12 @@
     display: block
     position: absolute
     right: 190px
+    +r(1199)
+      right: 40px
+    +r(920)
+      right: 10px
+      width: 300px
+      height: 300px
     top: 188px
     border-radius: 50%
     width: 447px
@@ -30,6 +38,10 @@
     position: absolute
     top: 90px
     right: 200px
+    +r(1199)
+      right: 50px
+    +r(920)
+      right: 10px
     z-index: 2
   h1
     color: $white
@@ -58,6 +70,7 @@ a.btn-primary
     background: #967740
 .btn-next 
   text-align: center
+  z-index: 4
   & a
     cursor: pointer
     z-index: 4

@@ -110,7 +110,7 @@
             <p>Понравившийся товар попадает в корзину, после чего можете переходить к оформлениюю.</p>
           </div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="product-card"><img src="img/small-jar.png" alt="Small jar.">
                 <div class="product-description">
                   <h3>Aleksa Spray</h3>
@@ -121,7 +121,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="product-card"><img src="img/small-jar.png" alt="Small jar.">
                 <div class="product-description">
                   <h3>Aleksa Spray</h3>
@@ -132,7 +132,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
               <div class="product-card"><img src="img/small-jar.png" alt="Small jar.">
                 <div class="product-description">
                   <h3>Aleksa Spray</h3>
@@ -250,7 +250,7 @@
             </div>
           </div>
           <div class="order">
-            <p>В корзине<span class="order__items">2</span>товара на сумму<span class="order__price">500</span>грн</p><a class="btn-secondary" href="#">Оформить заказ</a>
+            <p>В корзине<span class="order__items">2</span>товара на сумму<span class="order__price">500</span>грн</p><a class="btn-secondary" href="#pop-up" rel="modal:open">Оформить заказ</a>
           </div>
         </div>
       </section>
@@ -275,7 +275,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5"><img src="img/aleksa-ph.png" alt="aleksa-photo"></div>
-            <div class="offset-1 col-md-5">
+            <div class="offset-md-1 offset-sm-0 col-md-5">
               <h2>От создателя брендa</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tortor aliquam, nec et sagittis facilisis vel, semper. Non turpis enim eu nullam. Mi vulputate sed pharetra nec tempor urna. Donec dui, orci tincidunt volutpat. Consectetur aliquam velit augue aliquam. Eu, leo, sit integer viverra diam ultrices potenti. Auctor aliquet sem mauris gravida enim. Neque, mollis risus nunc placerat morbi felis dis augue nulla. Sodales pellentesque euismod tristique porta morbi.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tortor aliquam, nec et sagittis facilisis vel, semper. Non turpis enim eu nullam. Mi vulputate sed pharetra nec tempor urna. Donec dui, orci tincidunt volutpat. Consectetur aliquam velit augue aliquam. Eu, leo, sit integer viverra diam ultrices potenti. Auctor aliquet sem mauris gravida enim. Neque, mollis risus nunc placerat morbi felis dis augue nulla. Sodales pellentesque euismod tristique porta morbi.</p>
@@ -286,13 +286,17 @@
       <footer class="footer" id="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-3"><a class="footer-logo" href="#">Aleksa Gold</a></div>
             <div class="col-md-3">
-              <h3>Мы в соц. сетях</h3><a class="social" href="#"><svg class="icon icon-instagram ">
-                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                </svg><span>Instagram</span></a><a class="social" href="#"><svg class="icon icon-facebook ">
-                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                </svg><span>Facebook</span></a>
+              <div class="container-logo"><a class="footer-logo" href="#">Aleksa Gold</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="social-box">
+                <h3>Мы в соц. сетях</h3><a class="social" href="#"><svg class="icon icon-instagram ">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg><span>Instagram</span></a><a class="social" href="#"><svg class="icon icon-facebook ">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg><span>Facebook</span></a>
+              </div>
             </div>
             <div class="col-md-3">
               <h3>Мы на связи</h3><a class="phone" href="tel:+38 (050) 909 56 86">+38 (050) 909 56 86</a><a class="phone" href="tel:+38 (050) 909 56 86">+38 (073) 909 56 86</a>
@@ -310,7 +314,9 @@
         </div>
       </footer>
       <div class="pop-up modal" id="pop-up">
-        <div class="container">
+        <div class="container"><a class="close-modal" href="#close-modal" rel="modal:close"><svg class="icon icon-close ">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg></a>
           <div class="row">
             <h2 class="pop-up__heading">Корзина</h2>
           </div>

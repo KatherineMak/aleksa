@@ -1,22 +1,102 @@
 .blocker
   z-index: 5
-//   &-close
-//     width: 30px
-//     height: 30px
-//     position: absolute
-//     right: 20px
-//     top: 20px
-//     span
-//       &:before, &:after
-//         content: ''
-//         width: 30px
-//         height: 2px
-//         background: $black
-//         position: absolute
-//         top: 13px
-//       &:before
-//         left: 0
-//         transform: rotate(45deg)
-//       &:after
-//         right: 0
-//         transform: rotate(-45deg)
+.pop-up
+  position: relative
+  background-color: #2D2D2D
+  border-radius: 34px
+  width: 100%
+  max-width: 1183px
+  height: 100%
+  min-height: 706px
+  & .pop-up__left-side
+    position: relative
+    border-right: 1px solid #757575
+    height: 100%
+    & .product__amount
+      +center
+      & p
+        font-weight: bold
+        font-size: 20px
+        letter-spacing: -0.01em
+        color: #CBA550
+      & span
+        font-weight: bold
+        font-size: 40px
+        letter-spacing: -0.01em
+        color: #CBA550
+        margin: 0 10px
+  & .form
+    & h2
+      font-size: 26px
+      color: #5A5A5A
+    & .btn-secondary
+      margin-top: 110px
+      width: 280px
+      height: 80px
+      align-items: center
+  & h2.pop-up__heading
+    font-size: 36px
+    color: #838383
+    margin-left: 40px
+  & .product
+    display: flex
+    border-bottom: 1px solid #757575
+    & .product__description
+      margin-top: 50px
+      & h3
+        font-weight: bold
+        font-size: 20px
+        letter-spacing: -0.01em
+        color: #CBA550
+      & p
+        margin-top: 20px
+        font-weight: bold
+        font-size: 20px
+        letter-spacing: -0.01em
+        color: #CBA550
+    & .product__number
+      display: flex
+      margin: 50px 0 0 40px
+      & p
+        font-weight: bold
+        font-size: 20px
+        letter-spacing: -0.01em
+        color: #797979
+        padding: 35px 15px 0
+      & span
+        font-weight: bold
+        font-size: 60px
+        display: flex
+        letter-spacing: -0.01em
+        color: #CBA550
+      & .product__number-control a
+        +center
+        margin: 10px 20px
+        width: 20px
+        height: 20px
+        background-color: $white
+        border-radius: 50%
+        font-weight: bold
+        letter-spacing: -0.01em
+        color: #CBA550
+        font-size: 20px
+  a.close-modal
+   width: 30px
+   height: 30px
+   position: absolute
+   right: 20px
+   top: 20px
+   span
+     &:before, &:after
+       content: ''
+       width: 30px
+       height: 2px
+       background: $black
+       position: absolute
+       top: 13px
+     &:before
+       left: 0
+       transform: rotate(45deg)
+     &:after
+       right: 0
+       transform: rotate(-45deg)

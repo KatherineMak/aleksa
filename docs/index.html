@@ -12,7 +12,6 @@
   <body>
     <!--BEGIN out-->
     <div class="out">
-      <!--BEGIN header-->
       <header class="header">
         <div class="container">
           <div class="logo"><img src="img/logo.png" alt="logo"></div>
@@ -20,9 +19,7 @@
                 <use xlink:href="img/sprite.svg#icon-basket"></use>
               </svg></a></nav>
         </div>
-      </header>
-      <!--END header-->
-      <!-- partial example-->
+      </header><!-- partial example-->
       <section class="home-intro">
         <div class="container">
           <h1>Заголовок</h1>
@@ -34,6 +31,7 @@
             </a></div><img src="img/intro.png" alt="intro">
         </div>
       </section>
+      <!--include ./home/advantages-->
       <section class="home-advantages">
         <div class="container">
           <h2>Почему Aleksa Gold</h2>
@@ -41,17 +39,36 @@
             <p>Сделай подарок своим волосам</p>
             <p>Сделай заказ сейчас же и получи порцию витаминов для волос уже завтра!</p>
           </div><a class="btn-secondary" href="#">Заказать</a>
-          <div class="btn-next__container">
-            <p>Смотри больше</p><svg class="icon icon-arrow ">
-              <use xlink:href="img/sprite.svg#icon-arrow"></use>
-            </svg>
-          </div>
-          <div class="swiper-container">
+          <div class="btn-next__container"><a href="#">
+              <p>Смотри больше</p><svg class="icon icon-arrow ">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </a></div>
+          <div class="swiper-container-1">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">
+                <div class="advantage-slide"><svg class="icon icon-feather ">
+                    <use xlink:href="img/sprite.svg#icon-feather"></use>
+                  </svg>
+                  <h3>Легкая текстура для всех типов волос</h3>
+                  <p>Сюда можно будет вставить какой-то дополнительный текст с описанием</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="advantage-slide no-active"><svg class="icon icon-number ">
+                    <use xlink:href="img/sprite.svg#icon-number"></use>
+                  </svg></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="advantage-slide no-active"><svg class="icon icon-rabbit ">
+                    <use xlink:href="img/sprite.svg#icon-rabbit"></use>
+                  </svg></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="advantage-slide no-active"><svg class="icon icon-star ">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg></div>
+              </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -66,6 +83,19 @@
               </svg><span>Instagram</span></a><a class="social" href="#"><svg class="icon icon-facebook ">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg><span>Facebook</span></a>
+          </div>
+          <div class="gallery-container">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-area"><img src="img/slider-img-1.png" alt="Slider image 1."><img src="img/slider-img-2.png" alt="Slider image 2."><img src="img/slider-img-3.png" alt="Slider image 3."><img src="img/slider-img-4.png" alt="Slider image 4."></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-area"><img src="img/slider-img-1.png" alt="Slider image 1."><img src="img/slider-img-2.png" alt="Slider image 2."><img src="img/slider-img-3.png" alt="Slider image 3."><img src="img/slider-img-4.png" alt="Slider image 4."></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -237,7 +267,6 @@
           </div>
         </div>
       </section>
-      <div class="pop-up modal" id="pop-up"></div>
       <section class="home-about">
         <div class="container">
           <div class="row">
@@ -250,7 +279,6 @@
           </div>
         </div>
       </section>
-      <!--BEGIN footer-->
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -277,7 +305,49 @@
           </div>
         </div>
       </footer>
-      <!--END footer-->
+      <div class="pop-up modal" id="pop-up">
+        <div class="container">
+          <div class="row">
+            <h2 class="pop-up__heading">Корзина</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="pop-up__left-side">
+                <div class="product-list">
+                  <div class="product"><img src="img/xsm-jar.png" alt="Product">
+                    <div class="product__description">
+                      <h3>Aleksa Spray</h3>
+                      <p>250 грн</p>
+                    </div>
+                    <div class="product__number">
+                      <p>Кол.</p><span>2</span>
+                      <div class="product__number-control"><a href="#">+</a><a href="#">-</a></div>
+                    </div>
+                  </div>
+                  <div class="product"><img src="img/xsm-jar.png" alt="Product">
+                    <div class="product__description">
+                      <h3>Aleksa Spray</h3>
+                      <p>250 грн</p>
+                    </div>
+                    <div class="product__number">
+                      <p>Кол.</p><span>2</span>
+                      <div class="product__number-control"><a href="#">+</a><a href="#">-</a></div>
+                    </div>
+                  </div>
+                  <div class="product__amount">
+                    <p>Итого<span>1000</span>грн</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form">
+                <h2>Оформление заказа</h2><input type="text" name="firstname" placeholder="Имя"><input type="text" name="lastname" placeholder="Фамилия"><input type="tel" name="phone" placeholder="Телефон"><input type="email" name="email" placeholder="email@example.com"><a class="btn-secondary" href="#">Оформить заказ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->

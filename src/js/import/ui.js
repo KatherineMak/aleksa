@@ -15,8 +15,19 @@ window.onscroll = function showHeaderFixed() {
     header.classList.remove('header-fixed');
   }
 };
+$( document ).ready(function() {
+  console.log("Hi ");
+    function addToCart(e) {
+        e.preventDefault();
+        console.log("Hi");
+        $("#buy").closest("div.product-card").toggleClass('is-active');
+    };
+});
+
 
 $(function() {
+  console.log("Hi ");
+
   $('.menu-toggle').click(function() {
     $('.menu').toggleClass('is-active');
     $( '.menu-bg' ).fadeIn();
@@ -31,6 +42,6 @@ $(function() {
     event.preventDefault();
     const id  = $(this).attr('href');
     const {top} = $(id).offset();
-    $('body,html').animate({scrollTop: top - 100}, 1000);
+    $('body,html').animate({scrollTop: top - 50}, 1000);
   });
 });

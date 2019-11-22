@@ -5,17 +5,26 @@
     margin-top: 80px
     position: relative
     display: flex
+    height: calc(100% - 80px)
     background-color: #2D2D2D
     border-radius: 10px
     width: 100%
     padding-bottom: 15px
+    padding-right: 15px
+    &.is-active
+      background-color: #131313
     img
       position: absolute
       display: flex
-      top: -50px
-      left: -30px
+      top: 50%
+      left: -25px
+      transform: translate(-10%, -50%)
     .product-description
-      padding-left: 120px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding-left: 100px
+      width: 100%
       h3
         padding: 15px 0 10px
         font-weight: bold
@@ -35,6 +44,14 @@
         justify-content: center
         align-items: center
         width: 140px
+        +r(1200)
+          width: 100%
+        +r(767)
+          width: auto
+          padding: 15px
+        +r(360)
+          width: 100%
+          font-size: 13px
         height: 40px
         color: $white
         background-color: #CBA550

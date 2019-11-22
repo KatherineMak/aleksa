@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 
 
-//advantages
+// advantages
 const swiper1 = new Swiper('.swiper-container-advantages', {
   effect: 'coverflow',
   grabCursor: true,
@@ -38,7 +38,7 @@ const swiper1 = new Swiper('.swiper-container-advantages', {
 });
 
 
-//gallery
+// gallery
 const swiper = new Swiper('.swiper-container-gallery', {
   slidesPerView: 2,
   spaceBetween: 0,
@@ -51,6 +51,15 @@ const swiper = new Swiper('.swiper-container-gallery', {
   navigation: {
     nextEl: '.swiper-shares-gallery',
   },
+  breakpoints: {
+      1200: {
+          slidesPerView: 2
+      },
+      991: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+      }
+  }
 });
 
 

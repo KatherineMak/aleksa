@@ -5,16 +5,26 @@
   align-items: center
   justify-content: center
   position: relative
+  &__content
+    z-index: 3
+    position: relative
+    //+r(767)
+    //  background-color: rgba(0, 0, 0, 0.4)
+    //  width: 100%
+    //  height: 100%
+    //  padding: 20px
+    //  margin: 0
   &:after
     content: ""
     display: block
     position: absolute
     top: 0
     right: 130px
+    width: 300px
     +r(1199)
       right: 30px
+      width: 200px
     min-height: 700px
-    width: 300px
     background-color: #141417
     z-index: 0
   &:before
@@ -25,7 +35,8 @@
     +r(1199)
       right: 40px
     +r(920)
-      right: 10px
+      right: 20px
+      top: 280px
       width: 300px
       height: 300px
     top: 188px
@@ -38,23 +49,29 @@
     position: absolute
     top: 90px
     right: 200px
+    z-index: 2
     +r(1199)
       right: 50px
     +r(920)
-      right: 10px
-    z-index: 2
+      right: 20px
+      width: 350px
+      top: 185px
   h1
     color: $white
     font-size: 60px
     line-height: 69px
     padding-top: 170px
     margin: 20px 0
+    +r(450)
+      text-align: center
   h2
     color: $white
     max-width: 373px
     font-size: 40px
     line-height: 35px
     margin: 20px 0 79px
+    +r(450)
+      text-align: center
 a.btn-primary
   display: flex
   align-items: center
@@ -66,18 +83,19 @@ a.btn-primary
   line-height: 29px
   text-align: center
   background: #CBA550
+  +r(767)
+    border: 1px solid  #967740
+  +r(450)
+    width: 100%
   &:hover
     background: #967740
 .btn-next 
   text-align: center
-  z-index: 4
   & a
     cursor: pointer
-    z-index: 4
     &:hover
       color: #CBA550
   & p
-    z-index: 4
     font-size: 12px
     line-height: 14px
     letter-spacing: 0.35em

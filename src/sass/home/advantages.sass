@@ -1,16 +1,23 @@
 .home-advantages
   // min-height: 650px
-  padding: 40px 0
+  padding: 40px 0 100px
   position: relative
   overflow: hidden
   &__text
     max-width: 280px
     padding-top: 230px
+    +r(767)
+      padding-top: 30px
   .btn-next__container
     position: absolute
-    bottom: 20px
+    top: 90%
     right: 200px
     text-align: center
+    +r(767)
+      top: 95%
+      right: 40%
+    +r(450)
+      right: 25%
     p
       font-size: 12px
       line-height: 14px
@@ -19,6 +26,9 @@
       color: #73581B
     .icon-arrow
       fill: #73581B
+  .btn-secondary
+    +r(767)
+    margin: 30px 0
   .swiper-container-advantages
     position: absolute
     right: -50px
@@ -31,6 +41,7 @@
     +r(767)
       width: 100%
       position: static
+      padding-bottom: 50px
   .swiper-slide
     .home-advantages__slide
       width: 283px
@@ -48,10 +59,15 @@
       left: -22px
       +r(1200)
         left: -15px
+      +r(1199)
+        left: -10px
+      +r(767)
+        left: 0
       h3, p
         opacity: 1
       svg
         top: 0
+        fill: #CBA550
   &__slide
     position: relative
     text-align: center
@@ -59,11 +75,13 @@
     box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.38)
     border-radius: 10px
     padding-bottom: 40px
+    +r(767)
+      padding-bottom: 80px
     padding-top: 55px
     svg
       width: 73px
       height: 67px
-      fill: #CBA550
+      fill:  #73581B
       position: relative
       top: 80px
       transition: all 0.8s
@@ -83,3 +101,12 @@
       padding: 0 25px
       transition: all 0.6s
       opacity: 0
+  .swiper-container-horizontal>.swiper-pagination-bullets
+    left: 25%
+    +r(767)
+      left: 0
+  .swiper-pagination-bullet
+    margin-right: 15px !important
+    background: #C4C4C4
+  .swiper-pagination-bullet-active
+    background: #CBA550

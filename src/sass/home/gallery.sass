@@ -1,12 +1,14 @@
 .home-gallery
-  min-height: 600px
   padding-top: 40px
+  padding-bottom: 30px
   position: relative
   &__container
     height: 100%
     +center-y
   &__text
-    margin-top: 250px
+    margin-top: 170px
+    +r(767)
+      margin-top: 50px
   &__row
     display: flex
   &__column
@@ -31,18 +33,25 @@
       width: 100%
       height: 100%
       +object-fit(cover)
-  .swiper-slide-active
-    .home-gallery__img
-      &:before
-        opacity: 0
-  .swiper-button-next
-    width: 50%
-    background: none
-    height: 100%
-    top: 0
-    transform: 0
-.swiper-pagination-bullet
-  background: #C4C4C4
-.swiper-pagination-bullet-active
-  background: #CBA550
+  .swiper
+    &-slide-active
+      .home-gallery__img
+        &:before
+          opacity: 0
+    &-button-next
+      width: 50%
+      background: none
+      height: 100%
+      top: 0
+      transform: 0
+    &-container-gallery
+      padding-bottom: 20px
+    &-pagination-bullet
+      background: #C4C4C4
+    &-pagination-bullet-active
+      background: #CBA550
+    &-container-horizontal>.swiper-pagination-bullets
+      left: -45%
+      +r(1199)
+        left: -40%
   

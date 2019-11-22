@@ -26,13 +26,15 @@
           </svg></a><a href="#">Продукция</a><a href="#">Партнерская программа</a><a href="#">Философия бренда</a><a href="#">Контакты</a></div><!-- partial example-->
       <section class="home-intro" id="intro">
         <div class="container">
-          <h1>Заголовок</h1>
-          <h2>Здесь какой-то подзаголовок</h2><a class="btn-primary" href="#">Кнопка</a>
-          <div class="btn-next"><a href="#advantages">
-              <p>Листай дальше</p><svg class="icon icon-arrow ">
-                <use xlink:href="img/sprite.svg#icon-arrow"></use>
-              </svg>
-            </a></div><img src="img/intro.png" alt="intro">
+          <div class="home-intro__content">
+            <h1>Заголовок</h1>
+            <h2>Здесь какой-то подзаголовок</h2><a class="btn-primary" href="#">Кнопка</a>
+            <div class="btn-next"><a href="#advantages">
+                <p>Листай дальше</p><svg class="icon icon-arrow ">
+                  <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a></div>
+          </div><img src="img/intro.png" alt="intro">
         </div>
       </section>
       <section class="home-advantages" id="advantages">
@@ -41,7 +43,7 @@
           <div class="home-advantages__text">
             <p>Сделай подарок своим волосам</p>
             <p>Сделай заказ сейчас же и получи порцию витаминов для волос уже завтра!</p>
-          </div><a class="btn-secondary" href="#">Заказать</a>
+          </div><a class="btn-secondary" href="#shop">Заказать</a>
           <div class="btn-next__container"><a href="#gallery">
               <p>Смотри больше</p><svg class="icon icon-arrow ">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -172,9 +174,9 @@
                 <div class="product-description">
                   <h3>Aleksa Spray</h3>
                   <p>Кератиновый спрей для волос с термозащитой (универсальный)</p>
-                  <div class="card-bottom"><a class="btn-product" href="#">В корзину<svg class="icon icon-basket ">
+                  <div class="card-bottom"><button class="btn-product" type="submit" onclick="addToCart(e)" id="#buy">В корзину<svg class="icon icon-basket ">
                         <use xlink:href="img/sprite.svg#icon-basket"></use>
-                      </svg></a><span>250 грн</span></div>
+                      </svg></button><span>250 грн</span></div>
                 </div>
               </div>
             </div>
@@ -307,18 +309,21 @@
       </section>
       <section class="home-partners" id="partners">
         <div class="container">
-          <div class="heading-container">
-            <h2>Партнерская программа</h2>
-          </div>
-          <div class="text-container">
-            <p>AleksaGold предлагает тебе стать представителем бренд и поучавствовать партнерской программе на очень выгодных условиях!</p>
-            <p>Чтобы стать участником программы заполни форму.</p>
-          </div>
-          <div class="form">
-            <h2>Заполни форму</h2><input type="text" name="firstname" placeholder="Имя"><input type="text" name="lastname" placeholder="Фамилия"><input type="tel" name="phone" placeholder="Телефон"><input type="email" name="email" placeholder="email@example.com"><a class="btn-secondary" href="#">Стать партнером</a>
-          </div>
-          <div class="logo-container">
-            <p>Aleksa Gold</p>
+          <div class="row justify-content-center">
+            <div class="col-md-3">
+              <div class="heading-container">
+                <h2>Партнерская программа</h2>
+              </div>
+              <div class="text-container">
+                <p>AleksaGold предлагает тебе стать представителем бренд и поучавствовать партнерской программе на очень выгодных условиях!</p>
+                <p>Чтобы стать участником программы заполни форму.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-9">
+              <div class="form">
+                <h2>Заполни форму</h2><input type="text" name="firstname" placeholder="Имя"><input type="text" name="lastname" placeholder="Фамилия"><input type="tel" name="phone" placeholder="Телефон"><input type="email" name="email" placeholder="email@example.com"><a class="btn-secondary" href="#">Стать партнером</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -11,12 +11,23 @@ body
 a
   text-decoration: none
   transition: all 0.3s
+h2
+  font-weight: bold
+  font-size: 26px
+  line-height: 87.27%
+  color: #5A5A5A
+  margin-bottom: 20px
+  margin-top: 20px
+p
+  font-size: 18px
+  line-height: 87.27%
+  color: rgba(255, 255, 255, 0.2)
+  margin-bottom: 10px
 input[type="submit"]
   appearance: none
   -webkit-appearance: none
 textarea
   resize: none
-
 
 +r(767)
 	.hidden-xs
@@ -37,6 +48,9 @@ a.btn-secondary
   height: 60px
   font-size: 25px
   line-height: 29px
+  +r(450)
+    width: 100%
+    font-size: 18px
   &:hover
     border: 2px solid #8c6e3a
     color: #8c6e3a
@@ -72,17 +86,6 @@ a.social
     margin-bottom: 30px
     display: block
     text-align: center
-  h2
-    font-weight: bold
-    font-size: 26px
-    line-height: 87.27%
-    color: #5A5A5A
-    margin-bottom: 20px
-    margin-top: 20px
-  p 
-    font-size: 18px
-    line-height: 87.27%
-    color: rgba(255, 255, 255, 0.2)
   li
     +center
     a
@@ -93,12 +96,10 @@ a.social
         text-decoration: underline
 .form
   margin: 0 auto
-  position: absolute
   z-index: 1
   padding: 26px 62px
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
+  +r(450)
+    padding: 26px 30px
   width: 100%
   height: 100%
   background: #2D2D2D
@@ -117,6 +118,8 @@ a.social
     border-bottom: 1px solid #757575
     font-weight: bold
     font-size: 26px
+    +r(450)
+      font-size: 20px
     line-height: 87.27%
     text-align: center
     color: #C9C9C9

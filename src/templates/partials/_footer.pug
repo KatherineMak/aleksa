@@ -1,25 +1,28 @@
 footer.footer#footer
     .container
         .row
-            .col-md-3
+            .col-lg-3.col-md-6
                 .container-logo
                     a.footer-logo(href="#") Aleksa Gold
-            .col-md-3
-                .social-box
+            .col-lg-3.col-md-6
+                .footer__part
                     h3 Мы в соц. сетях
-                    a.social(href="#")
-                        +icon("instagram")
-                        span Instagram
-                    a.social(href="#")
-                        +icon("facebook")
-                        span Facebook
-            .col-md-3
-                h3 Мы на связи
-                a.phone(href="tel:+38 (050) 909 56 86") +38 (050) 909 56 86
-                a.phone(href="tel:+38 (050) 909 56 86") +38 (073) 909 56 86
-            .col-md-3
-                h3 Доставка
-                p.simple-text Самовывоз от такого-то адреса или такого-то адреса, либо же отправка в любой город украины по Новой Почте.
+                    .social-box
+                        a.social(href="#")
+                            +icon("instagram")
+                            span Instagram
+                        a.social(href="#")
+                            +icon("facebook")
+                            span Facebook
+            .col-lg-3.col-md-6
+                .footer__part
+                    h3 Мы на связи
+                    a.phone(href="tel:+38 (050) 909 56 86") +38 (050) 909 56 86
+                    a.phone(href="tel:+38 (050) 909 56 86") +38 (073) 909 56 86
+            .col-lg-3.col-md-6
+                .footer__part
+                    h3 Доставка
+                    p.simple-text Самовывоз от такого-то адреса или такого-то адреса, либо же отправка в любой город украины по Новой Почте.
         .row
             .col
                 p.copyright Copyright © 2013-2019 Lead Generation Services. All rights reserved.

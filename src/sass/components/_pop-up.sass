@@ -4,28 +4,39 @@
   position: relative
   background-color: #2D2D2D
   border-radius: 34px
-  width: 100%
   max-width: 1183px
-  height: 100%
   min-height: 706px
-  & .pop-up__left-side
+  .pop-up__left-side
     position: relative
+    height: calc(100% - 80px)
+    padding-right: 40px
+    +r(991)
+      padding-right: 0
     border-right: 1px solid #757575
-    height: 100%
-    & .product__amount
-      +center
-      & p
+    +r(991)
+      border-right: none
+    //height: 100%
+    .product__amount
+      margin-top: 40%
+      display: flex
+      justify-content: center
+      p
         font-weight: bold
         font-size: 20px
         letter-spacing: -0.01em
         color: #CBA550
-      & span
+      span
         font-weight: bold
         font-size: 40px
         letter-spacing: -0.01em
         color: #CBA550
         margin: 0 10px
   & .form
+    +r(991) 
+      padding: 20px 10%
+    +r(450)
+      padding: 0
+      width: 100%
     & h2
       font-size: 26px
       color: #5A5A5A
@@ -34,21 +45,41 @@
       width: 280px
       height: 80px
       align-items: center
+      +r(991)
+        width: 80%
+        height: 60px
+        font-size: 22px
+        margin-top: 40px
+      +r(450)
+        width: 100%
   & h2.pop-up__heading
     font-size: 36px
     color: #838383
     margin-left: 40px
-  & .product
+    +r(450)
+      margin-left: 0
+  .product
     display: flex
+    justify-content: space-between
     border-bottom: 1px solid #757575
+    +r(450)
+      display: block
+      text-align: center
+    &__img
+      +r(550)
+        margin-left: -40px
+    &:nth-last-child(2)
+      border-bottom: none
     & .product__description
       margin-top: 50px
-      & h3
+      +r(450)
+        margin-top: 10px
+      h3
         font-weight: bold
         font-size: 20px
         letter-spacing: -0.01em
         color: #CBA550
-      & p
+      p
         margin-top: 20px
         font-weight: bold
         font-size: 20px
@@ -56,20 +87,23 @@
         color: #CBA550
     & .product__number
       display: flex
-      margin: 50px 0 0 40px
-      & p
+      justify-content: space-between
+      align-items: center
+      p
         font-weight: bold
         font-size: 20px
         letter-spacing: -0.01em
         color: #797979
-        padding: 35px 15px 0
-      & span
+        padding: 45px 10px 0 0
+        +r(450)
+          padding: 10px 10px 0 0
+      span
         font-weight: bold
         font-size: 60px
         display: flex
         letter-spacing: -0.01em
         color: #CBA550
-      & .product__number-control a
+      .product__number-control a
         +center
         margin: 10px 20px
         width: 20px
@@ -80,10 +114,13 @@
         letter-spacing: -0.01em
         color: #CBA550
         font-size: 20px
-  a.close-modal
-    fill: #5a5a5a
-    width: 30px
-    height: 30px
+  a.pop-up__btn-close
     position: absolute
     right: 20px
     top: 20px
+    svg
+      fill: #5a5a5a
+      width: 30px
+      height: 30px
+  a.close-modal
+    display: none

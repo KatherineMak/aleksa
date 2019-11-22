@@ -1,19 +1,14 @@
 .home-intro
   background: radial-gradient(81.46% 682.66% at 81.46% 53.93%, #6D6D6D 0%, #343434 46.43%)
-  min-height: 700px
   display: flex
   align-items: center
   justify-content: center
   position: relative
+  padding-bottom: 40px
   &__content
     z-index: 3
     position: relative
-    //+r(767)
-    //  background-color: rgba(0, 0, 0, 0.4)
-    //  width: 100%
-    //  height: 100%
-    //  padding: 20px
-    //  margin: 0
+    height: 100%
   &:after
     content: ""
     display: block
@@ -21,10 +16,10 @@
     top: 0
     right: 130px
     width: 300px
-    +r(1199)
+    +r(767)
       right: 30px
       width: 200px
-    min-height: 700px
+    height: 100%
     background-color: #141417
     z-index: 0
   &:before
@@ -36,9 +31,11 @@
       right: 40px
     +r(920)
       right: 20px
-      top: 280px
+      top: 215px
       width: 300px
       height: 300px
+    +r(767)
+      top: 155px
     top: 188px
     border-radius: 50%
     width: 447px
@@ -55,12 +52,16 @@
     +r(920)
       right: 20px
       width: 350px
-      top: 185px
+      top: 120px
+    +r(767)
+      top: 60px
   h1
     color: $white
     font-size: 60px
     line-height: 69px
     padding-top: 170px
+    +r(767)
+      padding-top: 70px
     margin: 20px 0
     +r(450)
       text-align: center
@@ -85,6 +86,8 @@ a.btn-primary
   background: #CBA550
   +r(767)
     border: 1px solid  #967740
+    width: 200px
+    height: 60px
   +r(450)
     width: 100%
   &:hover
@@ -92,7 +95,9 @@ a.btn-primary
 .btn-next 
   text-align: center
   & a
+    display: block
     cursor: pointer
+    padding: 5px
     &:hover
       color: #CBA550
   & p
@@ -101,6 +106,6 @@ a.btn-primary
     letter-spacing: 0.35em
     text-transform: uppercase
     color: $white
-    margin-top: 50px
+    margin-top: 100px
   & .icon-arrow
     fill: $white

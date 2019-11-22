@@ -23,12 +23,18 @@
       <div class="menu-bg"></div>
       <div class="menu"><a class="btn-close" href="#"><svg class="icon icon-close ">
             <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg></a><a href="#">Продукция</a><a href="#">Партнерская программа</a><a href="#">Философия бренда</a><a href="#">Контакты</a></div><!-- partial example-->
+          </svg></a><a href="#intro">Aleksa Gold</a><a href="#shop">Продукция</a><a href="#partners">Партнерская программа</a><a href="#about">Философия бренда</a><a href="#footer">Контакты</a><a href="#pop-up" rel="modal:open"><svg class="icon icon-basket ">
+            <use xlink:href="img/sprite.svg#icon-basket"></use>
+          </svg></a></div><!-- partial example-->
       <section class="home-intro" id="intro">
         <div class="container">
           <div class="home-intro__content">
-            <h1>Заголовок</h1>
-            <h2>Здесь какой-то подзаголовок</h2><a class="btn-primary" href="#">Кнопка</a>
+            <div class="h2-container">
+              <h1>Заголовок</h1>
+            </div>
+            <div class="h2-container">
+              <h2>Здесь какой-то подзаголовок</h2>
+            </div><a class="btn-primary" href="#">Кнопка</a>
             <div class="btn-next"><a href="#advantages">
                 <p>Листай дальше</p><svg class="icon icon-arrow ">
                   <use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -39,7 +45,9 @@
       </section>
       <section class="home-advantages" id="advantages">
         <div class="container">
-          <h2>Почему Aleksa Gold</h2>
+          <div class="h2-container">
+            <h2>Почему Aleksa Gold </h2>
+          </div>
           <div class="home-advantages__text">
             <p>Сделай подарок своим волосам</p>
             <p>Сделай заказ сейчас же и получи порцию витаминов для волос уже завтра!</p>
@@ -91,8 +99,10 @@
       <section class="home-gallery" id="gallery">
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
-              <h2>Галерея</h2>
+            <div class="col-md-4">
+              <div class="h2-container">
+                <h2>Галерея</h2>
+              </div>
               <div class="home-gallery__text">
                 <p>Окунись в мир красоты и будь частью AleksaGold - фото продукции, производство и вся жизнь бренда в одном месте.</p><a class="social" href="#"><svg class="icon icon-instagram ">
                     <use xlink:href="img/sprite.svg#icon-instagram"></use>
@@ -101,7 +111,7 @@
                   </svg><span>Facebook</span></a>
               </div>
             </div>
-            <div class="col-md-8 offset-md-1">
+            <div class="col-md-7 offset-md-1">
               <div class="home-gallery__container">
                 <div class="swiper-container swiper-container-gallery">
                   <div class="swiper-wrapper">
@@ -174,9 +184,9 @@
                 <div class="product-description">
                   <h3>Aleksa Spray</h3>
                   <p>Кератиновый спрей для волос с термозащитой (универсальный)</p>
-                  <div class="card-bottom"><button class="btn-product" type="submit" onclick="addToCart(e)" id="#buy">В корзину<svg class="icon icon-basket ">
+                  <div class="card-bottom"><a class="btn-product" href="#">В корзину<svg class="icon icon-basket ">
                         <use xlink:href="img/sprite.svg#icon-basket"></use>
-                      </svg></button><span>250 грн</span></div>
+                      </svg></a><span>250 грн</span></div>
                 </div>
               </div>
             </div>
@@ -309,7 +319,7 @@
       </section>
       <section class="home-partners" id="partners">
         <div class="container">
-          <div class="row justify-content-center">
+          <div class="row align-items-center">
             <div class="col-md-3">
               <div class="heading-container">
                 <h2>Партнерская программа</h2>
@@ -330,8 +340,11 @@
       <section class="home-about" id="about">
         <div class="container">
           <div class="row">
-            <div class="col-md-5"><img src="img/aleksa-ph.png" alt="aleksa-photo"></div>
+            <div class="col-md-5">
+              <div class="home-about__img-container"><img src="img/aleksa-ph.png" alt="aleksa-photo"></div>
+            </div>
             <div class="offset-md-1 offset-sm-0 col-md-5">
+              <div class="h2-container"> </div>
               <h2>От создателя брендa</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tortor aliquam, nec et sagittis facilisis vel, semper. Non turpis enim eu nullam. Mi vulputate sed pharetra nec tempor urna. Donec dui, orci tincidunt volutpat. Consectetur aliquam velit augue aliquam. Eu, leo, sit integer viverra diam ultrices potenti. Auctor aliquet sem mauris gravida enim. Neque, mollis risus nunc placerat morbi felis dis augue nulla. Sodales pellentesque euismod tristique porta morbi.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper tortor aliquam, nec et sagittis facilisis vel, semper. Non turpis enim eu nullam. Mi vulputate sed pharetra nec tempor urna. Donec dui, orci tincidunt volutpat. Consectetur aliquam velit augue aliquam. Eu, leo, sit integer viverra diam ultrices potenti. Auctor aliquet sem mauris gravida enim. Neque, mollis risus nunc placerat morbi felis dis augue nulla. Sodales pellentesque euismod tristique porta morbi.</p>
@@ -342,24 +355,29 @@
       <footer class="footer" id="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
               <div class="container-logo"><a class="footer-logo" href="#">Aleksa Gold</a></div>
             </div>
-            <div class="col-md-3">
-              <div class="social-box">
-                <h3>Мы в соц. сетях</h3><a class="social" href="#"><svg class="icon icon-instagram ">
-                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                  </svg><span>Instagram</span></a><a class="social" href="#"><svg class="icon icon-facebook ">
-                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                  </svg><span>Facebook</span></a>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer__part">
+                <h3>Мы в соц. сетях</h3>
+                <div class="social-box"><a class="social" href="#"><svg class="icon icon-instagram ">
+                      <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg><span>Instagram</span></a><a class="social" href="#"><svg class="icon icon-facebook ">
+                      <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg><span>Facebook</span></a></div>
               </div>
             </div>
-            <div class="col-md-3">
-              <h3>Мы на связи</h3><a class="phone" href="tel:+38 (050) 909 56 86">+38 (050) 909 56 86</a><a class="phone" href="tel:+38 (050) 909 56 86">+38 (073) 909 56 86</a>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer__part">
+                <h3>Мы на связи</h3><a class="phone" href="tel:+38 (050) 909 56 86">+38 (050) 909 56 86</a><a class="phone" href="tel:+38 (050) 909 56 86">+38 (073) 909 56 86</a>
+              </div>
             </div>
-            <div class="col-md-3">
-              <h3>Доставка</h3>
-              <p class="simple-text">Самовывоз от такого-то адреса или такого-то адреса, либо же отправка в любой город украины по Новой Почте.</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer__part">
+                <h3>Доставка</h3>
+                <p class="simple-text">Самовывоз от такого-то адреса или такого-то адреса, либо же отправка в любой город украины по Новой Почте.</p>
+              </div>
             </div>
           </div>
           <div class="row">
@@ -370,43 +388,41 @@
         </div>
       </footer>
       <div class="pop-up modal" id="pop-up">
-        <div class="container"><a class="close-modal" href="#close-modal" rel="modal:close"><svg class="icon icon-close ">
+        <div class="container"><a class="pop-up__btn-close" href="#intro" rel="modal:close"><svg class="icon icon-close ">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg></a>
+          <h2 class="pop-up__heading">Корзина</h2>
           <div class="row">
-            <h2 class="pop-up__heading">Корзина</h2>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-12">
               <div class="pop-up__left-side">
-                <div class="product-list">
-                  <div class="product"><img src="img/xsm-jar.png" alt="Product">
-                    <div class="product__description">
-                      <h3>Aleksa Spray</h3>
-                      <p>250 грн</p>
-                    </div>
-                    <div class="product__number">
-                      <p>Кол.</p><span>2</span>
-                      <div class="product__number-control"><a href="#">+</a><a href="#">-</a></div>
-                    </div>
+                <div class="product">
+                  <div class="product__img"><img src="img/xsm-jar.png" alt="Product"></div>
+                  <div class="product__description">
+                    <h3>Aleksa Spray</h3>
+                    <p>250 грн</p>
                   </div>
-                  <div class="product"><img src="img/xsm-jar.png" alt="Product">
-                    <div class="product__description">
-                      <h3>Aleksa Spray</h3>
-                      <p>250 грн</p>
-                    </div>
-                    <div class="product__number">
-                      <p>Кол.</p><span>2</span>
-                      <div class="product__number-control"><a href="#">+</a><a href="#">-</a></div>
-                    </div>
+                  <div class="product__number">
+                    <p>Кол.</p><span>2</span>
+                    <div class="product__number-control"><a href="#">+</a><a href="#">-</a></div>
                   </div>
-                  <div class="product__amount">
-                    <p>Итого<span>1000</span>грн</p>
+                </div>
+                <div class="product">
+                  <div class="product__img"><img src="img/xsm-jar.png" alt="Product"></div>
+                  <div class="product__description">
+                    <h3>Aleksa Spray</h3>
+                    <p>250 грн</p>
                   </div>
+                  <div class="product__number">
+                    <p>Кол.</p><span>2</span>
+                    <div class="product__number-control"><a href="#">+</a><a href="#">-</a></div>
+                  </div>
+                </div>
+                <div class="product__amount">
+                  <p>Итого<span>1000</span>грн</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-12">
               <div class="form">
                 <h2>Оформление заказа</h2><input type="text" name="firstname" placeholder="Имя"><input type="text" name="lastname" placeholder="Фамилия"><input type="tel" name="phone" placeholder="Телефон"><input type="email" name="email" placeholder="email@example.com"><a class="btn-secondary" href="#">Оформить заказ</a>
               </div>

@@ -10,6 +10,9 @@
   & .social-box
     +r(767)
       margin-bottom: 40px
+  .footer__part
+    margin-top: 20px
+    text-align: center
   & a.footer-logo
     font-weight: bold
     font-size: 91.4056px
@@ -18,7 +21,7 @@
     color: #333333
     &:hover
       color: #7f7f7f
-  & a.social
+  a.social
     margin: 0 0 15px
   & h3
     font-weight: bold
@@ -27,9 +30,10 @@
     color: #5A5A5A
     padding-bottom: 45px
   & a.phone
-    display: block
+    +center
+    white-space: nowrap
     font-size: 22px
-    line-height: 124.77%
+    font-weight: bold
     letter-spacing: 0.1em
     color: #CBA550
     margin-bottom: 35px

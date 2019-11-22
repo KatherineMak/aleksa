@@ -7,7 +7,7 @@ body
 .container
   box-sizing: border-box
   +rmin(1200)
-    max-width: 1165px !important
+    max-width: 1180px !important
 a
   text-decoration: none
   transition: all 0.3s
@@ -18,14 +18,21 @@ h2
   color: #5A5A5A
   margin-bottom: 20px
   margin-top: 20px
+.h2-container
+  width: 25%
 p
   font-size: 18px
   line-height: 87.27%
   color: rgba(255, 255, 255, 0.2)
-  margin-bottom: 10px
+  margin-bottom: 20px
 input[type="submit"]
   appearance: none
   -webkit-appearance: none
+  font-family: 'GillSans','Open Sans', sans-serif
+input[type="text"]
+  appearance: none
+  -webkit-appearance: none
+  font-family: 'GillSans','Open Sans', sans-serif
 textarea
   resize: none
 
@@ -98,7 +105,7 @@ a.social
   margin: 0 auto
   z-index: 1
   padding: 26px 62px
-  +r(450)
+  +r(1199)
     padding: 26px 30px
   width: 100%
   height: 100%
@@ -123,5 +130,5 @@ a.social
     line-height: 87.27%
     text-align: center
     color: #C9C9C9
-    & ::placeholder
+    &::placeholder
       color: #484848

@@ -16,29 +16,30 @@ window.onscroll = function showHeaderFixed() {
   }
 };
 $( document ).ready(function() {
-  console.log("Hi ");
-    function addToCart(e) {
-        e.preventDefault();
-        console.log("Hi");
-        $("#buy").closest("div.product-card").toggleClass('is-active');
-    };
+  function addToCart(e) {
+    e.preventDefault();
+    console.log('Hi');
+    $('#buy').closest('div.product-card').toggleClass('is-active');
+  };
 });
 
 
 $(function() {
-  console.log("Hi ");
+  // console.log("Hi ");
 
   $('.menu-toggle').click(function() {
     $('.menu').toggleClass('is-active');
     $( '.menu-bg' ).fadeIn();
   });
 
-  $('.btn-close, .menu-bg').click(function() {
+  $('.btn-close, .menu-bg').click(function(e) {
+    e.preventDefault();
     $('.menu').toggleClass('is-active');
     $( '.menu-bg' ).fadeOut();
   });
 
-  $('.btn-next, .btn-next__container, .nav-links').on('click','a', function(event) {
+  // $('.btn-next, .btn-next__container, .nav-links').on('click','a', function(event) {
+  $('.container').on('click','a', function(event) {
     event.preventDefault();
     const id  = $(this).attr('href');
     const {top} = $(id).offset();

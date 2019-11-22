@@ -31,14 +31,16 @@
         display: block
         position: absolute
         right: 5%
+        top: 25px
         border: none
         background-color: transparent
         padding: 0
       & span
-        height: 3px
+        height: 4px
         display: block
-        background-color: #ffffff
-        width: 30px
+        background-color: #CBA550
+        border-radius: 15px
+        width: 40px
       & span + span
         margin-top: 4px
       & .menu-toggle:focus
@@ -49,7 +51,6 @@
     display: block
     text-align: center
     margin-bottom: 25px
-
 .menu
   position: fixed
   right: -256px
@@ -70,13 +71,13 @@
     color: #5a5a5a
     &:hover
       color: #a1a1a1
-    & .icon-close
+    & .icon
       margin: 0
       fill: #5a5a5a
       &:hover
         fill: #a1a1a1
 .menu-bg
-  background-color: rgba(0, 0, 0, 0.43)
+  background-color: rgba(0, 0, 0, 0.7)
   width: 100%
   height: 100%
   position: fixed
@@ -94,7 +95,8 @@
   z-index: 6
   width: 100%
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7)
-  +r(767)
-    height: 35px
 .header-fixed .logo
+  margin-bottom: 0
   display: none
+  +r(767)
+    display: block

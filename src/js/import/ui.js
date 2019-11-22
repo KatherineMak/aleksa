@@ -38,6 +38,12 @@ $(function() {
     $( '.menu-bg' ).fadeOut();
   });
 
+  $('#pop-up-btn').click(function(e) {
+    e.preventDefault();
+    $('.menu').toggleClass('is-active');
+    $( '.menu-bg' ).fadeOut();
+  });
+
   // $('.btn-next, .btn-next__container, .nav-links').on('click','a', function(event) {
   $('.container').on('click','a', function(event) {
     event.preventDefault();

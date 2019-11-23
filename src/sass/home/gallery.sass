@@ -1,5 +1,5 @@
 .home-gallery
-  padding-top: 40px
+  padding-top: 100px
   padding-bottom: 30px
   position: relative
   &__container
@@ -7,8 +7,10 @@
     +center-y
   &__text
     margin-top: 170px
+    width: 90%
     +r(767)
       margin-top: 50px
+      width: 60%
   &__row
     display: flex
   &__column
@@ -49,10 +51,11 @@
     &-pagination-bullet
       background: #C4C4C4
       opacity: 1
+      margin: 0 7px !important
     &-pagination-bullet-active
       background: #CBA550
     &-container-horizontal>.swiper-pagination-bullets
-      left: -45%
+      left: -43%
       +r(1199)
-        left: -40%
+        left: -35%
   

@@ -1,6 +1,5 @@
 .home-advantages
-  // min-height: 650px
-  padding: 40px 0 100px
+  padding: 40px 0 70px
   position: relative
   overflow: hidden
   &__text
@@ -107,6 +106,8 @@
       transition: all 0.6s
       opacity: 0
   .swiper-container-horizontal>.swiper-pagination-bullets
+    +rmin(1200)
+      left: -8%
     left: 25%
     +r(767)
       left: 0

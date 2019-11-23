@@ -48,9 +48,9 @@ const swiper = new Swiper('.swiper-container-gallery', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  // navigation: {
-  //   nextEl: '.swiper-shares-gallery',
-  // },
+  navigation: {
+    nextEl: '.swiper-shares-gallery',
+  },
   breakpoints: {
     1200: {
       slidesPerView: 2

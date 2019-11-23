@@ -1,7 +1,6 @@
 .footer
-  min-height: 500px
   padding-top: 185px
-  +r(767)
+  +r(991)
     padding-top: 50px
   & .container-logo
     +r(767)
@@ -12,10 +11,13 @@
       margin-bottom: 40px
   .footer__part
     margin-top: 20px
-    text-align: center
+    +r(991)
+      text-align: center
   & a.footer-logo
     font-weight: bold
     font-size: 91.4056px
+    +r(767)
+      font-size: 70px
     line-height: 81.27%
     letter-spacing: -0.035em
     color: #333333
@@ -32,7 +34,10 @@
     color: #5A5A5A
     padding-bottom: 45px
   & a.phone
-    +center
+    display: flex
+
+    +r(991)
+      +center
     white-space: nowrap
     font-size: 22px
     font-weight: bold
@@ -47,6 +52,7 @@
     color: rgba(255, 255, 255, 0.2)
   p.copyright
     font-weight: 300
+    opacity: 0.6
     font-size: 18px
     line-height: 20px
     text-align: center

@@ -10,6 +10,7 @@
   nav
     display: flex
     justify-content: space-between
+    margin-top: 30px
     a
       font-size: 16px
       line-height: 19px
@@ -47,10 +48,13 @@
         outline: none
       & .menu-toggle:hover span
         background-color: #232323
-  & .logo
+  a
     display: block
     text-align: center
-    margin-bottom: 25px
+    .logo
+      display: block
+      text-align: center
+      margin-bottom: 25px
 .menu
   position: fixed
   right: -256px
@@ -95,6 +99,8 @@
   z-index: 6
   width: 100%
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7)
+  nav
+    margin-top: 5px
 .header-fixed .logo
   margin-bottom: 0
   display: none

@@ -60,6 +60,9 @@ $('.product-card a').on('click', function(event) {
   });
   $('.order__price').text(sum);
   $('.product__amount input').val(sum);
+
+
+  $('.product__list-first').after('<div class="product"><div class="product__img"><img src="img/xsm-jar.png" alt="Product" /></div><div class="product__description"><h3>Aleksa Spray</h3><p>250 грн</p></div><div class="product__number"><p>Кол.</p><span>1</span><div class="product__number-control"><a href="#">+</a><a href="#">-</a></div></div></div>');
 });
 
 

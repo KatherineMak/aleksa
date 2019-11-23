@@ -7,6 +7,7 @@ $('[rel="modal:open"]').on('click', function(event) {
   return false;
 });
 
+//fixed header
 window.onscroll = function showHeaderFixed() {
   const header = $('.header').get(0);
   if(window.pageYOffset > 70) {
@@ -15,40 +16,53 @@ window.onscroll = function showHeaderFixed() {
     header.classList.remove('header-fixed');
   }
 };
-$( document ).ready(function() {
-  function addToCart(e) {
-    e.preventDefault();
-    console.log('Hi');
-    $('#buy').closest('div.product-card').toggleClass('is-active');
-  };
+
+//mobile menu
+//open
+$('.menu-toggle').click(function() {
+  $('.menu').toggleClass('is-active');
+  $( '.menu-bg' ).fadeIn();
+});
+//close
+$('.btn-close, .menu-bg').click(function(e) {
+  e.preventDefault();
+  $('.menu').toggleClass('is-active');
+  $( '.menu-bg' ).fadeOut();
+});
+//open pop-up mobile menu
+$('#pop-up-btn').click(function(e) {
+  e.preventDefault();
+  $('.menu').toggleClass('is-active');
+  $( '.menu-bg' ).fadeOut();
 });
 
 
-$(function() {
-  // console.log("Hi ");
+//anchor
+// $('.btn-next, .btn-next__container, .nav-links').on('click','a', function(event) {
+// $('.container').on('click','a', function(event) {
+//   event.preventDefault();
+//   const id  = $(this).attr('href');
+//   const {top} = $(id).offset();
+//   $('body,html').animate({scrollTop: top - 50}, 1000);
+// });
 
-  $('.menu-toggle').click(function() {
-    $('.menu').toggleClass('is-active');
-    $( '.menu-bg' ).fadeIn();
-  });
 
-  $('.btn-close, .menu-bg').click(function(e) {
-    e.preventDefault();
-    $('.menu').toggleClass('is-active');
-    $( '.menu-bg' ).fadeOut();
+//add basket
+$('.product-card a').on('click', function(event) {
+  event.preventDefault();
+  $(this).closest('.product-card').toggleClass('is-active');
+  let productNumber = $('.product-card.is-active').length;
+  $('.home-shop .order__items, .menu a span, .nav-links a span').text(productNumber);
+  let sum = 0;
+  $('.product-card.is-active').each(function(i, elem) {
+    let coins = $(elem).find('.card-bottom span div').text();
+    sum += +coins;
   });
-
-  $('#pop-up-btn').click(function(e) {
-    e.preventDefault();
-    $('.menu').toggleClass('is-active');
-    $( '.menu-bg' ).fadeOut();
-  });
-
-  // $('.btn-next, .btn-next__container, .nav-links').on('click','a', function(event) {
-  $('.container').on('click','a', function(event) {
-    event.preventDefault();
-    const id  = $(this).attr('href');
-    const {top} = $(id).offset();
-    $('body,html').animate({scrollTop: top - 50}, 1000);
-  });
+  $('.order__price').text(sum);
+  $('.product__amount input').val(sum);
 });
+
+
+
+
+

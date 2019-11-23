@@ -17,20 +17,22 @@
       border-right: none
     //height: 100%
     .product__amount
-      margin-top: 40%
       display: flex
       justify-content: center
+      padding-top: 40px
       p
         font-weight: bold
         font-size: 20px
         letter-spacing: -0.01em
         color: #CBA550
-      span
+      input
         font-weight: bold
         font-size: 40px
         letter-spacing: -0.01em
         color: #CBA550
         margin: 0 10px
+        background: none
+        width: auto
   & .form
     +r(991)
       padding: 20px 10%
@@ -59,10 +61,7 @@
     +r(450)
       margin-left: 0
   .product__list
-    position: absolute
-    top: 0
-    left: 0
-    height: calc(100% - 20px)
+    height: calc(100vh - 300px)
     overflow: auto
   .product
     display: flex

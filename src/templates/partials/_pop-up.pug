@@ -1,4 +1,4 @@
-.pop-up.modal#pop-up
+form.pop-up.modal#pop-up
     .container
         a(href="#intro" rel="modal:close" class="pop-up__btn-close")
             +icon("close")
@@ -58,7 +58,7 @@
                                     a(href="#") -
                     .product__amount
                         p Итого
-                            span 1000
+                            input(type="number" name="sum" value="0")
                             | грн
 
             .col-lg-6.col-md-12

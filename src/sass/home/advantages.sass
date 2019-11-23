@@ -9,12 +9,14 @@
       padding-top: 30px
   .btn-next__container
     position: absolute
-    top: 90%
+    bottom: 0
     right: 200px
     text-align: center
     +r(767)
       right: 50%
       transform: translate(50%,0)
+    +r(450)
+      width: 100%
     p
       font-size: 12px
       line-height: 14px
@@ -25,7 +27,6 @@
       fill: #73581B
     a
       display: block
-      padding: 10px
   .btn-secondary
     +r(767)
     margin: 30px 0

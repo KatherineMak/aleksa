@@ -8,7 +8,7 @@
   min-height: 706px
   .pop-up__left-side
     position: relative
-    height: calc(100% - 80px)
+    height: 100%
     padding-right: 40px
     +r(991)
       padding-right: 0
@@ -58,18 +58,35 @@
     margin-left: 40px
     +r(450)
       margin-left: 0
+  .product__list
+    position: absolute
+    top: 0
+    left: 0
+    height: calc(100% - 20px)
+    overflow: auto
   .product
     display: flex
+    position: relative
     justify-content: space-between
-    border-bottom: 1px solid #757575
+    //border-bottom: 1px solid #757575
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      bottom: 0
+      right: 0
+      width: calc(100% - 40px)
+      height: 1px
+      background-color: #757575
     +r(450)
       display: block
       text-align: center
     &__img
       +r(550)
         margin-left: -40px
-    &:nth-last-child(2)
-      border-bottom: none
+    &:last-child
+      &:after
+        content: none
     & .product__description
       margin-top: 50px
       +r(450)

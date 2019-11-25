@@ -30,21 +30,21 @@ $('.btn-close, .menu-bg').click(function(e) {
   $( '.menu-bg' ).fadeOut();
 });
 //open pop-up mobile menu
-$('#pop-up-btn').click(function(e) {
+$('.menu__link').click(function(e) {
   e.preventDefault();
   $('.menu').toggleClass('is-active');
   $( '.menu-bg' ).fadeOut();
 });
 
 
-//anchor
-// $('.btn-next, .btn-next__container, .nav-links').on('click','a', function(event) {
+// anchor
+$('.btn-next, .btn-next__container, .nav-links, .home-advantages, .menu').on('click','a', function(event) {
 // $('.container').on('click','a', function(event) {
-//   event.preventDefault();
-//   const id  = $(this).attr('href');
-//   const {top} = $(id).offset();
-//   $('body,html').animate({scrollTop: top - 50}, 1000);
-// });
+  event.preventDefault();
+  const id  = $(this).attr('href');
+  const {top} = $(id).offset();
+  $('body,html').animate({scrollTop: top - 50}, 1000);
+});
 
 
 //add basket
@@ -58,11 +58,10 @@ $('.product-card a').on('click', function(event) {
     let coins = $(elem).find('.card-bottom span div').text();
     sum += +coins;
   });
-  $('.order__price').text(sum);
-  $('.product__amount input').val(sum);
+  $('.order__price, .product__amount span').text(sum);
 
 
-  $('.product__list-first').after('<div class="product"><div class="product__img"><img src="img/xsm-jar.png" alt="Product" /></div><div class="product__description"><h3>Aleksa Spray</h3><p>250 грн</p></div><div class="product__number"><p>Кол.</p><span>1</span><div class="product__number-control"><a href="#">+</a><a href="#">-</a></div></div></div>');
+  $('.product__list-first').after('<div class="product"><div class="product__img"><img src="img/xsm-jar.png" alt="Product" /></div><div class="product__description"><h3>Aleksa Spray</h3><p>250 грн</p></div><div class="product__number"><p>Кол.</p><span>1</span><div class="product__number-control"><a href="#" class="number-plus">+</a><a href="#" class="number-minus">-</a></div></div></div>');
 });
 
 

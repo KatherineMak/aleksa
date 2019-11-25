@@ -25,14 +25,14 @@
         font-size: 20px
         letter-spacing: -0.01em
         color: #CBA550
-      input
+      span
         font-weight: bold
         font-size: 40px
         letter-spacing: -0.01em
         color: #CBA550
         margin: 0 10px
         background: none
-        max-width: auto
+
   & .form
     +r(991)
       padding: 20px 10%
@@ -42,7 +42,7 @@
     & h2
       font-size: 26px
       color: #5A5A5A
-    & .btn-secondary
+    button .btn-secondary
       margin-top: 110px
       width: 280px
       height: 80px
@@ -54,6 +54,7 @@
         margin-top: 40px
       +r(450)
         width: 100%
+        padding: 0 2px
   & h2.pop-up__heading
     font-size: 36px
     color: #838383
@@ -67,7 +68,6 @@
     display: flex
     position: relative
     justify-content: space-between
-    //border-bottom: 1px solid #757575
     &:after
       content: ''
       display: block

@@ -57,9 +57,11 @@
       margin-bottom: 25px
 .menu
   position: fixed
-  right: -256px
+  right: -400px
   height: 100%
-  width: 256px
+  max-width: 400px
+  width: 100%
+  //width: 256px
   background-color: #232323
   padding: 15px
   transition: 0.6s
@@ -68,18 +70,22 @@
     right: 0
   a
     display: block
+    text-align: center
     font-weight: 700
     font-size: 20px
-    margin: 15px 0
+    margin: 25px 0
     line-height: 87.27%
     color: #5a5a5a
     &:hover
       color: #a1a1a1
+      svg
+        fill: #a1a1a1
     & .icon
       margin: 0
       fill: #5a5a5a
-      &:hover
-        fill: #a1a1a1
+    &.btn-close
+      text-align: left
+
 .menu-bg
   background-color: rgba(0, 0, 0, 0.7)
   width: 100%
@@ -106,3 +112,5 @@
   display: none
   +r(767)
     display: block
+span.basket
+  padding-right: 5px

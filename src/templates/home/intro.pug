@@ -1,11 +1,15 @@
 section.home-intro#intro
     .container
+        //.scene
         .home-intro__content
-            h1 Заголовок
-            h2 Здесь какой-то подзаголовок
-            a(href="#").btn-primary Кнопка
-            .btn-next
-                a(href="#advantages")
-                    p Листай дальше
-                    +icon("arrow")
-        img(src="img/intro.png", alt="intro")
+            //.ex-1(data-depth="0.4")
+            .ex-1
+                h1 Заголовок
+                h2 Здесь какой-то подзаголовок
+                a(href="#").btn-primary Кнопка
+                .btn-next
+                    a(href="#advantages")
+                        p Листай дальше
+                        +icon("arrow")
+            .home-about__img-container(data-depth="0.4")
+                img(src="img/intro.png", alt="intro")

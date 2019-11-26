@@ -38,7 +38,7 @@ $('.menu__link').click(function(e) {
 
 
 // anchor
-$('.btn-next, .btn-next__container, .nav-links, .home-advantages, .menu').on('click','a', function(event) {
+$('.btn-next, .btn-next__container, .nav-links, .home-advantages, .menu li').on('click','a', function(event) {
 // $('.container').on('click','a', function(event) {
   event.preventDefault();
   const id  = $(this).attr('href');

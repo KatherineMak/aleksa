@@ -18,13 +18,20 @@ header.header
                 span
 .menu-bg
 .menu
-    a(href="#" class="btn-close")
+    a(href="" class="btn-close")
         +icon("close")
-    a(href="#intro" class="menu__link") Aleksa Gold
-    a(href="#shop" class="menu__link") Продукция
-    a(href="#partners" class="menu__link") Партнерская программа
-    a(href="#about" class="menu__link") Философия бренда
-    a(href="#footer" class="menu__link") Контакты
-    a(href="#pop-up" rel="modal:open" class="menu__link")
-        span.basket 0
-        +icon("basket")
+    ul
+        li
+            a(href="#intro" class="menu__link") Aleksa Gold
+        li 
+            a(href="#shop" class="menu__link") Продукция
+        li 
+            a(href="#partners" class="menu__link") Партнерская программа
+        li 
+            a(href="#about" class="menu__link") Философия бренда
+        li 
+            a(href="#footer" class="menu__link") Контакты
+        li 
+            a(href="#pop-up" rel="modal:open" class="menu__link")
+                span.basket 0
+                +icon("basket")

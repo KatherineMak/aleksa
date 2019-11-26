@@ -62,7 +62,7 @@ $('.product-card a').on('click', function(event) {
 
   $('.product__list').append('<div class="product" id="1"><div class="product__img"></div><div class="product__description"></div><div class="product__number"><p>Кол.</p><span class="number__span">1</span><div class="product__number-control"><a href="#" class="number-plus">+</a><a href="#" class="number-minus">-</a></div></div></div>');
   // $('.product__list').empty();
-  // $('.product__list').append($(this).closest('.product-description').clone());
+  $('.product__list').append($(this).closest('.product-description').clone());
   // console.log($(this).closest('h3').text());
 
   // $('.product__list-first').after('<div class="product"><div class="product__img"><img src="img/xsm-jar.png" alt="Product" /></div><div class="product__description"><h3>Aleksa Spray</h3><p>250 грн</p></div><div class="product__number"><p>Кол.</p><span>1</span><div class="product__number-control"><a href="#" class="number-plus">+</a><a href="#" class="number-minus">-</a></div></div></div>');

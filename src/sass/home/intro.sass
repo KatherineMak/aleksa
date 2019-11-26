@@ -48,9 +48,10 @@
     background: #CBA550
     z-index: 1
   .home-intro__heading
-    z-index: 4
-  img
-    z-index: 2
+    z-index: 5
+  .intro__img-container
+    position: absolute !important
+    z-index: 0
     +rmin(1450)
       top: 10% !important
       left: 60% !important
@@ -71,6 +72,10 @@
       left: 10% !important
     +r(350)
       left: 0 !important
+    img
+      z-index: 0
+      +r(920)
+        width: 350px
   h1
     max-width: 600px
     +r(991)

@@ -24,18 +24,37 @@
       margin-left: 0
       width: 100%
     height: 515px
-    &:before
-      content: 'Aleksa Gold'
+  .partners__brand-name
+    position: absolute
+    left: -10%
+    +r(991)
+      left: 50%
+    text-align: left
+    z-index: -1
+    p
       font-weight: bold
       font-size: 100.896px
       line-height: 81.27%
       letter-spacing: -0.035em
       color: #333333
-      position: absolute
-      right: -290px
-      bottom: 20px
-      width: 340px
-      text-align: left
-      z-index: -1
-      +r(1199)
-        display: none
+      max-width: 350px
+      +r(991)
+        font-size: 70px
+        max-width: 150px
+      //+r(1199)
+      //  display: none
+    //&:before
+    //  content: 'Aleksa Gold'
+    //  font-weight: bold
+    //  font-size: 100.896px
+    //  line-height: 81.27%
+    //  letter-spacing: -0.035em
+    //  color: #333333
+    //  position: absolute
+    //  right: -290px
+    //  bottom: 20px
+    //  width: 340px
+    //  text-align: left
+    //  z-index: -1
+    //  +r(1199)
+    //    display: none

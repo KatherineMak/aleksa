@@ -1,4 +1,6 @@
 import Parallax from 'parallax-js';
 
-let scene = $('.home-intro__content').get(0);
-let parallaxInstance = new Parallax(scene);
+let spray = $('.intro__img-container').get(0);
+let parallaxSpray = new Parallax(spray);
+let brandName = $('.brand-name__container').get(0);
+let parallaxBrandName = new Parallax(brandName);

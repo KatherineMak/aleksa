@@ -1,36 +1,48 @@
 form.pop-up.modal#pop-up
-    .container
-        a(href="#intro" rel="modal:close" class="pop-up__btn-close")
-            +icon("close")
+    a(href="#intro" rel="modal:close" class="pop-up__btn-close")
+        +icon("close")
 
-        h2.pop-up__heading Корзина
-        .row
-            .col-lg-6.col-md-12
-                .pop-up__left-side
-                    .product__list
-                        .product__list-first
-                        //- .product
-                        //-     .product__img
-                        //-         img(src="img/xsm-jar.png" alt="Product")
-                        //-     .product__description
-                        //-         h3 Aleksa Spray
-                        //-         p 250 грн
-                        //-     .product__number
-                        //-         p Кол.
-                        //-         span 1
-                        //-         .product__number-control
-                        //-             a(href="#") +
-                        //-             a(href="#") -
-                    .product__amount
-                        p Итого
-                            span 0
-                            | грн
+    h2 Корзина
+    .row
+        .col-lg-7.col-xl-6.col-md-12
+            .pop-up__left-side
+                .product__list
+                    .product
+                        .product__block
+                            .product__img
+                                img(src="img/xsm-jar.png" alt="Product")
+                            .product__description
+                                h3 Aleksa Spray
+                                p 250 грн
+                        .product__number
+                            p Кол.
+                            span 1
+                            .product__number-control
+                                a(href="#") +
+                                a(href="#") -
+                    .product
+                        .product__block
+                            .product__img
+                                img(src="img/xsm-jar.png" alt="Product")
+                            .product__description
+                                h3 Aleksa Spray
+                                p 250 грн
+                        .product__number
+                            p Кол.
+                            span 1
+                            .product__number-control
+                                a(href="#") +
+                                a(href="#") -
+                .product__amount
+                    p Итого
+                        span 0
+                        | грн
 
-            .col-lg-6.col-md-12
-                .form
-                    h2 Оформление заказа
-                    input(type="text" name="firstname" placeholder="Имя")
-                    input(type="text" name="lastname" placeholder="Фамилия")
-                    input(type="tel" name="phone" placeholder="Телефон")
-                    input(type="email" name="email" placeholder="email@example.com")
-                    button.btn-secondary(href="#", type="submit") Оформить заказ
+        .col-lg-5.col-xl-6.col-md-12
+            .form
+                h2 Оформление заказа
+                input(type="text" name="firstname" placeholder="Имя")
+                input(type="text" name="lastname" placeholder="Фамилия")
+                input(type="tel" name="phone" placeholder="Телефон")
+                input(type="email" name="email" placeholder="email@example.com")
+                button.btn-secondary(href="#", type="submit") Оформить заказ

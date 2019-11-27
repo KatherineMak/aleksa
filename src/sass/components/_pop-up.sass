@@ -1,28 +1,36 @@
 .blocker
   z-index: 7
-  +r(767)
+  +r(500)
     padding: 0
-.modal
-  +r(767)
-    padding: 15px 5px
 .pop-up
   position: relative
   background-color: #2D2D2D
   border-radius: 34px
   max-width: 1183px
   min-height: 706px
-  +r(450)
-  padding-bottom: 40px
-  .pop-up__left-side
+  padding: 30px 0 50px
+  +r(767)
+    width: 100%
+    padding-bottom: 0
+  +r(500)
+    border-radius: 0
+    padding: 0 15px
+  h2
+    font-size: 36px
+    color: #838383
+    text-align: left
+    max-width: 100%
+    margin-left: 30px
+  &__left-side
     position: relative
     height: 100%
     padding-right: 40px
+    border-right: 1px solid #757575
+    +r(1100)
+      padding-right: 10px
     +r(991)
       padding-right: 0
-    border-right: 1px solid #757575
-    +r(991)
       border-right: none
-    //height: 100%
     .product__amount
       display: flex
       justify-content: center
@@ -39,38 +47,14 @@
         color: #CBA550
         margin: 0 10px
         background: none
-
-  & .form
-    +r(991)
-      padding: 20px 10%
-    +r(767)
-      padding: 0
-      width: 100%
-    & h2
-      font-size: 26px
-      color: #5A5A5A
-    button .btn-secondary
-      margin-top: 110px
-      width: 280px
-      height: 80px
-      align-items: center
-      +r(991)
-        width: 80%
-        height: 60px
-        font-size: 22px
-        margin-top: 40px
-      +r(450)
-        width: 100%
-        padding: 0 2px
-  & h2.pop-up__heading
-    font-size: 36px
-    color: #838383
-    margin-left: 40px
-    +r(450)
-      margin-left: 0
   .product__list
     height: 450px
     overflow: auto
+    +r(991)
+      height: auto
+      padding-right: 40px
+    +r(500)
+      padding: 0 20px
   .product
     display: flex
     position: relative
@@ -84,19 +68,18 @@
       width: calc(100% - 40px)
       height: 1px
       background-color: #757575
-    +r(450)
+      +r(500)
+        width: 100%
+    +r(500)
       display: block
-      text-align: center
-    &__img
-      +r(550)
-        margin-left: -40px
-    &:last-child
-      &:after
-        content: none
-    & .product__description
-      margin-top: 50px
-      +r(450)
-        margin-top: 10px
+    &__block
+      display: flex
+      align-items: center
+      img
+        +r(500)
+          margin-bottom: -30px
+          margin-left: -30px
+    &__description
       h3
         font-weight: bold
         font-size: 20px
@@ -108,10 +91,14 @@
         font-size: 20px
         letter-spacing: -0.01em
         color: #CBA550
-    & .product__number
+    &__number
       display: flex
       justify-content: space-between
       align-items: center
+      +r(500)
+        max-width: 200px
+        width: 100%
+        +relative-x
       p
         font-weight: bold
         font-size: 20px
@@ -126,7 +113,7 @@
         display: flex
         letter-spacing: -0.01em
         color: #CBA550
-      .product__number-control a
+      &-control a
         +center
         margin: 10px 20px
         width: 20px
@@ -147,3 +134,27 @@
       height: 30px
   a.close-modal
     display: none
+  .form
+    +r(991)
+      padding: 20px 10%
+    +r(767)
+      padding: 40px 20px 0
+      width: 100%
+    h2
+      font-size: 26px
+      color: #5A5A5A
+      text-align: center
+      margin-left: 0px
+    button .btn-secondary
+      margin-top: 110px
+      width: 280px
+      height: 80px
+      align-items: center
+      +r(991)
+        width: 80%
+        height: 60px
+        font-size: 22px
+        margin-top: 40px
+      +r(450)
+        width: 100%
+        padding: 0 2px

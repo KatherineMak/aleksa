@@ -5,23 +5,24 @@
   justify-content: center
   position: relative
   overflow: hidden
-  +r(767)
-    background: linear-gradient(to left, #6D6D6D, #343434)
   &:before
     content: ''
     +line
     height: 100%
     left: 50%
-  &:after
-    content: ""
-    display: block
-    position: absolute
-    background-color: #141417
     z-index: 1
-    width: 100%
-    left: 0
-    height: 195px
-    bottom: 0 
+  +r(767)
+    background: linear-gradient(to left, #6D6D6D, #343434)
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      background-color: #141417
+      z-index: 1
+      width: 100%
+      left: 0
+      height: 195px
+      bottom: 0 
   &__heading
     &:before
       content: ''

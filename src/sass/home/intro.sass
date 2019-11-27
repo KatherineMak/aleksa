@@ -42,6 +42,8 @@
       height: 100%
       background-color: #141417
       z-index: -2
+      +r(767)
+        content: none
   // .home-intro__heading
   //   z-index: 5
   //   position: relative
@@ -105,6 +107,11 @@ a.btn-primary
 .btn-next 
   text-align: center
   padding-bottom: 30px
+  +r(767)
+    position: absolute
+    bottom: 10%
+    left: 50%
+    transform: translate(-50%, 0)
   a
     display: block
     cursor: pointer

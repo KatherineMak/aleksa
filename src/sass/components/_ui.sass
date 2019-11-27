@@ -51,9 +51,6 @@ textarea
   font-size: 25px
   line-height: 29px
   background-color: transparent
-  +r(450)
-    width: 100%
-    font-size: 16px
   &:hover
     border: 2px solid #8c6e3a
     color: #8c6e3a
@@ -78,6 +75,8 @@ textarea
       fill: #856b36
 .text-container
   max-width: 280px
+  +r(767)
+    max-width: 100%
 .pages
   padding: 150px 0 50px
   h1
@@ -114,6 +113,7 @@ textarea
   & .btn-secondary
     margin: 46px auto 53px
     +r(450)
+      font-size: 16px
       width: 80%
   & input
     width: 100%

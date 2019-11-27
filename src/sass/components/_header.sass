@@ -18,7 +18,7 @@
       color: #FFFFFF
       +r(767)
         display: none
-      & .icon-basket
+      .icon-basket
         fill: $white
       &:hover
         color: #CBA550
@@ -26,7 +26,7 @@
         color: #CBA550
         &:hover
           color: $white
-    & .menu-toggle
+    .menu-toggle
       display: none
       +r(767)
         display: block
@@ -36,18 +36,13 @@
         border: none
         background-color: transparent
         padding: 0
-      & span
-        height: 4px
+      span
+        height: 3px
         display: block
         background-color: #CBA550
-        border-radius: 15px
-        width: 40px
-      & span + span
-        margin-top: 4px
-      & .menu-toggle:focus
-        outline: none
-      & .menu-toggle:hover span
-        background-color: #232323
+        border-radius: 44px
+        width: 34px
+        margin-bottom: 6px
   a
     display: block
     text-align: center
@@ -81,7 +76,7 @@
       color: #a1a1a1
       svg
         fill: #a1a1a1
-    & .icon
+    .icon
       margin: 0
       fill: #5a5a5a
     &.btn-close

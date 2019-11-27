@@ -1,7 +1,31 @@
 .home-advantages
-  padding: 40px 0 70px
   position: relative
   overflow: hidden
+  &__content
+    height: 100%
+    position: relative
+    padding: 40px 0 70px
+    &:before
+      content: ''
+      +line
+      height: calc(100% - 180px)
+      bottom: 0
+      top: auto
+      left: 0
+    &:after
+      content: ''
+      +line
+      height: 50%
+      bottom: 0
+      top: auto
+      left: 280px
+    .decor-1, .decor-2
+      +line
+      left: 55%
+      bottom: 0
+      height: 50%
+    .decor-2
+      left: calc(55% + 280px)
   &__text
     max-width: 280px
     padding-top: 25%
@@ -11,7 +35,7 @@
   .btn-next__container
     position: absolute
     bottom: 0
-    right: 200px
+    right: 70px
     text-align: center
     +r(767)
       right: 50%
@@ -30,9 +54,10 @@
     a
       display: block
   .btn-secondary
+    margin: 30px 0
+    width: 280px
     +r(767)
       margin: 30px auto
-    margin: 30px 0
   .swiper-container-advantages
     position: absolute
     right: -50px

@@ -1,20 +1,37 @@
 .home-partners
   min-height: 530px
-  margin-top: 60px
   position: relative
   overflow: hidden
-  h2
-    max-width: 250px
-  & .heading-container
+  &__content
+    height: 100%
+    position: relative
+    padding-top: 60px
+    &:before, &:after
+      content: ''
+      +line
+      height: calc(100% - 180px)
+      bottom: 0
+      top: auto
+      left: 0
+    &:after
+      left: 280px
+    .decor-1
+      +line
+      right: 270px
+      top: -50px
+      height: 50%
+  .heading-container
     width: 260px
-  & .text-container
+    +r(767)
+      width: 100%
+  .text-container
     margin-top: 260px
     +r(1199)
       width: 200px
     +r(767)
       margin-top: 40px
       width: 100%
-  & .form
+  .form
     width: 515px
     +r(1199)
       margin-left: 50px

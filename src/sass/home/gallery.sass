@@ -1,10 +1,27 @@
 .home-gallery
-  padding-top: 100px
-  padding-bottom: 30px
   position: relative
   &__container
     height: 100%
     +center-y
+  &__decor
+    height: 100%
+    padding-top: 100px
+    padding-bottom: 30px
+    position: relative
+    padding-left: 5px
+    &:before
+      content: ''
+      +line
+      height: 100%
+      bottom: 0
+      top: auto
+      left: 0
+    &:after
+      content: ''
+      +line
+      height: 50%
+      top: 0
+      left: 280px
   &__text
     margin-top: 170px
     width: 90%

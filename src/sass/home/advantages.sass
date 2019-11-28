@@ -28,6 +28,8 @@
       left: calc(55% + 280px)
   &__content-bottom
     position: relative
+    +r(767)
+      padding-top: 170px
     a.btn-secondary
       margin-top: -80px
       position: absolute
@@ -36,6 +38,8 @@
         left: 50%
         transform: translate(-50%, 0)
         margin-top: 10px
+        position: absolute
+        bottom: 60px
     &:before
       content: ''
       +line
@@ -50,11 +54,16 @@
       top: auto
       left: 280px
   &__text
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 450px
     max-width: 280px
-    padding-top: 25%
     +r(767)
-      padding-top: 30px
+      min-height: auto
       max-width: 100%
+    h2
+      margin-bottom: 70px
   .btn-next__container
     position: absolute
     bottom: 0
@@ -81,10 +90,12 @@
     width: 280px
     +r(767)
       margin: 30px auto
+     
   .swiper-container-advantages
     position: absolute
     right: -50px
-    top: 20%
+    top: calc(50% - 20px)
+    transform: translate(0, -50%)
     width: 860px
     +r(1200)
       width: 600px
@@ -94,6 +105,7 @@
       width: 100%
       position: static
       padding-bottom: 50px
+      transform: none
     +r(550)
       width: 285px
 

@@ -26,6 +26,30 @@
       height: 50%
     .decor-2
       left: calc(55% + 280px)
+  &__content-bottom
+    position: relative
+    padding-bottom: 165px
+    a.btn-secondary
+      margin-top: -80px
+      position: absolute
+      z-index: 1
+      +r(767)
+        left: 50%
+        transform: translate(-50%, 0)
+        margin-top: 10px
+    &:before
+      content: ''
+      +line
+      height: 100%
+      bottom: 0
+      top: auto
+    &:after
+      content: ''
+      +line
+      height:  100%
+      bottom: 0
+      top: auto
+      left: 280px
   &__text
     max-width: 280px
     padding-top: 25%

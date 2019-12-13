@@ -39,6 +39,7 @@
     border-radius: 12px
     width: calc(100% - 15px)
     position: relative
+    display: block
     &:before
       content: ''
       width: 100%
@@ -52,6 +53,18 @@
       width: 100%
       height: 100%
       +object-fit(cover)
+    &-primary
+      height: 220px
+      +r(1200)
+        height: 375px
+      +r(575)
+        height: 240px
+    &-secondary
+      height: 150px
+      +r(1200)
+        height: 250px
+      +r(575)
+        height: 170px
   .swiper
     &-slide-active
       .home-gallery__img

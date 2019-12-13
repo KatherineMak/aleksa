@@ -1,4 +1,14 @@
 import modal from 'jquery-modal';
+// import '../lib/fancybox';
+
+
+
+
+
+
+
+
+
 // pop-up
 $('[rel="modal:open"]').on('click', function(event) {
   $(this).modal({
@@ -45,32 +55,3 @@ $('.btn-next, .btn-next__container, .nav-links, .home-advantages, .menu li').on(
   const {top} = $(id).offset();
   $('body,html').animate({scrollTop: top - 50}, 1000);
 });
-
-
-// //add basket
-// $('.product-card a').on('click', function(event) {
-//   event.preventDefault();
-//   $(this).closest('.product-card').toggleClass('is-active');
-//   let productNumber = $('.product-card.is-active').length;
-//   $('.home-shop .order__items, .menu a span, .nav-links a span').text(productNumber);
-//   let sum = 0;
-//   $('.product-card.is-active').each(function(i, elem) {
-//     let coins = $(elem).find('.card-bottom span div').text();
-//     sum += +coins;
-//   });
-//   $('.order__price, .product__amount span').text(sum);
-// });
-
-// //plus product in basket
-// $('.number-plus').click(function(event) {
-//   event.preventDefault();
-//   console.log('Plus');
-//   let number = $(this).closest('.number__span').text();
-//   number += +number;
-//   $(this).closest('.number__span').text(number);
-// });
-
-
-
-
-

@@ -29,12 +29,43 @@
       width: 100%
       h3
         padding: 15px 0 10px
+        padding-right: 25px
         font-weight: bold
         font-size: 20px
         display: flex
         align-items: center
         letter-spacing: -0.01em
         color: #CBA550
+        position: relative
+        a
+          position: absolute
+          right: 6px
+          top: 20px
+          display: block
+          svg
+            fill: #eee
+            width: 15px
+            height: 15px
+      &__pop-up
+        position: absolute
+        padding: 0 20px 20px
+        left: 0
+        top: 0
+        width: 100%
+        border-radius: 10px
+        background: #2D2D2D
+        box-shadow: 0 0 15px 0 rgba(#000, 0.6)
+        z-index: 3
+        display: none
+        h3
+          a
+            right: 0px
+        h4
+          color: #CBA550
+          font-size: 16px
+          margin-bottom: 6px
+        p
+          color: #fff  
       p
         text-align: left
         padding-right: 15px
@@ -48,6 +79,7 @@
         align-items: center
         width: 140px
         white-space: nowrap
+        background: linear-gradient(126.32deg, #DEBC75 0%, #9E8754 26.04%, #9D8756 54.18%, #FFEABF 84.86%, #957E4C 100%, #C4C4C4 100%), #CBA550
         +r(1200)
           width: auto
           padding: 15px
@@ -56,9 +88,8 @@
           font-size: 13px
         height: 40px
         color: $white
-        background-color: #CBA550
         &:hover
-          background-color: #876d36
+          box-shadow: 0 0 14px 0px rgba(#9E8754, 0.4)
       .icon-basket
         fill: $white
         margin-left: 5px
